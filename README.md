@@ -52,11 +52,19 @@ A publicação do Registro.br ocorre a cada 5 minutos.
 
 ### Registros
 
+O campo **Nome** do painel aceita o nome completo do host. **Não use `@` nem `*`** — o painel do Registro.br recusa esses caracteres.
+
 | Tipo | Nome | Valor |
 |---|---|---|
-| A | `@` | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
-| AAAA | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
-| CNAME | `www` | `felipeerickfilhao1245-afk.github.io` |
+| A | `felpsgames.com.br` | `185.199.108.153` |
+| A | `felpsgames.com.br` | `185.199.109.153` |
+| A | `felpsgames.com.br` | `185.199.110.153` |
+| A | `felpsgames.com.br` | `185.199.111.153` |
+| AAAA | `felpsgames.com.br` | `2606:50c0:8000::153` |
+| AAAA | `felpsgames.com.br` | `2606:50c0:8001::153` |
+| AAAA | `felpsgames.com.br` | `2606:50c0:8002::153` |
+| AAAA | `felpsgames.com.br` | `2606:50c0:8003::153` |
+| CNAME | `www.felpsgames.com.br` | `felipeerickfilhao1245-afk.github.io` |
 
 No GitHub: **Settings → Pages → Custom domain** = `felpsgames.com.br`, depois ative **Enforce HTTPS**.
 
