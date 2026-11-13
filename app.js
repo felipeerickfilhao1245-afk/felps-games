@@ -30,12 +30,12 @@ const CONFIG = {
 
 const PRODUTOS = [
   {
-    nome: "Controle sem fio para PC e celular",
+    nome: "Controle Sem Fio Joystick REDFIN Bluetooth Compatível Para Ps4 Videogame Tv Samsung Pc P4 Ps 4 Manete Pc Gamer Tv Smart Controle Bluetooth Celular Headset Sem Fio Com P2 Marca Redfin",
     nicho: "Games",
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/1F7ujs2",
-    preco: "R$ 52,15",
+    preco: "R$ 54,90",
     nota: 4.7,
     avaliacoes: 2100,
     descricao: "Para jogar no PC, notebook ou celular sem depender de cabo. Uma opção para começar com um setup mais limpo.",

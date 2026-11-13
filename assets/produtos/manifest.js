@@ -12,14 +12,6 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/caixa-de-som-bluetooth-portatil/05.webp?v=da494cbeb5",
     "assets/produtos/caixa-de-som-bluetooth-portatil/06.webp?v=0ad90687b8"
   ],
-  "controle sem fio para pc e celular": [
-    "assets/produtos/controle-sem-fio-para-pc-e-celular/01.webp?v=aca4265e53",
-    "assets/produtos/controle-sem-fio-para-pc-e-celular/02.webp?v=a61c2a6f30",
-    "assets/produtos/controle-sem-fio-para-pc-e-celular/03.webp?v=f343fe52ae",
-    "assets/produtos/controle-sem-fio-para-pc-e-celular/04.webp?v=aa94842bd8",
-    "assets/produtos/controle-sem-fio-para-pc-e-celular/05.webp?v=f3e33dd1a9",
-    "assets/produtos/controle-sem-fio-para-pc-e-celular/06.webp?v=132f776403"
-  ],
   "headset gamer com microfone": [
     "assets/produtos/headset-gamer-com-microfone/01.webp?v=7b92712ed2",
     "assets/produtos/headset-gamer-com-microfone/02.webp?v=f4f661419b",
