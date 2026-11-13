@@ -35,6 +35,23 @@ O GitHub Pages republica automaticamente em alguns minutos.
 
 O arquivo `CNAME` contém `felpsgames.com.br`. No DNS do registrador:
 
+### Registro.br: ativar o Modo Avançado
+
+O domínio recém-registrado fica no **Modo Básico**, que só permite redirecionamento. Para usar registros A/AAAA/CNAME:
+
+1. Acesse https://registro.br/painel/ e entre na conta.
+2. Em **Domínios**, clique em `felpsgames.com.br`.
+3. Desça até a seção **DNS** e clique em **Configurar Endereçamento**.
+4. Clique em **Modo Avançado** e confirme.
+5. Aguarde a mensagem de transição concluída e atualize a página.
+6. Clique em **Configurar zona DNS**.
+7. Em **Nova Entrada**, adicione cada registro da tabela e clique em **Adicionar**.
+8. No fim, clique em **Salvar Alterações**.
+
+A publicação do Registro.br ocorre a cada 5 minutos.
+
+### Registros
+
 | Tipo | Nome | Valor |
 |---|---|---|
 | A | `@` | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
