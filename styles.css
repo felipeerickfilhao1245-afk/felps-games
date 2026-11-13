@@ -703,7 +703,20 @@ button, input, select { font: inherit; }
   color: var(--muted);
 }
 
-.stars { color: #b8860b; letter-spacing: 0.06em; }
+.stars {
+  color: #b8860b;
+  letter-spacing: 0.06em;
+}
+
+/* A nota preenche as estrelas proporcionalmente (4,7 = 94%). */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .stars {
+    color: transparent;
+    background-image: linear-gradient(90deg, #b8860b var(--nota-pct, 100%), #d9d3c4 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
 
 .score {
   font-weight: 800;

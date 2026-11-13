@@ -24,7 +24,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso avaliações e mostro os contras antes de recomendar.",
-  atualizado: "2026-11-12",
+  atualizado: "2026-11-13",
   dadosConfirmados: true
 };
 
@@ -175,7 +175,7 @@ const PRODUTOS = [
    A partir daqui você não precisa editar.
    ============================================================ */
 
-/* 3 destaques atuais + 6 novos produtos em destaque. */
+/* Até 9 produtos podem aparecer em "Destaques da vitrine". */
 const MAX_DESTAQUES = 9;
 
 const state = {
@@ -215,6 +215,12 @@ function precoNumero(preco) {
 
 function notaFormatada(nota) {
   return Number(nota || 0).toFixed(1).replace(".", ",");
+}
+
+function estrelasHtml(nota) {
+  const valor = Math.max(0, Math.min(5, Number(nota) || 0));
+  const porcentagem = (valor / 5) * 100;
+  return `<span class="stars" aria-hidden="true" style="--nota-pct:${porcentagem.toFixed(1)}%">★★★★★</span>`;
 }
 
 function avaliacoesFormatadas(total) {
@@ -328,7 +334,7 @@ function cardHtml(produto, destaque) {
       <p class="desc">${escapeHtml(produto.descricao)}</p>
       <p class="ideal"><strong>Ideal para:</strong> ${escapeHtml(produto.publico)}</p>
       <div class="meta-row">
-        <span class="stars" aria-hidden="true">★★★★★</span>
+        ${estrelasHtml(produto.nota)}
         <span class="score">${notaFormatada(produto.nota)}</span>
         <span>· ${avaliacoesFormatadas(produto.avaliacoes)} avaliações</span>
       </div>
