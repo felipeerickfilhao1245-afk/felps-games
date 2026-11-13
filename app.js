@@ -7,8 +7,8 @@
       afiliado gerado no hub do Mercado Livre.
    3. As imagens entram automaticamente pela pasta
       "assets/produtos": crie uma subpasta com o nome do produto,
-      coloque as fotos dentro e rode o "Atualizar Imagens.bat" que
-      fica na propria pasta produtos.
+      coloque as fotos dentro e rode o "Publicar Site.bat" na raiz
+      do projeto.
       O campo "imagem" continua valendo para uma imagem manual
       avulsa, por exemplo "assets/produto.jpg".
    4. "destaque": 1 a 9 coloca o produto nos destaques.
@@ -411,7 +411,7 @@ function showStatusBanner() {
   }
 
   if (local) {
-    partes.push("Para editar, abra <code>app.js</code>. Para atualizar as fotos, crie a pasta do produto em <code>assets/produtos</code> e rode <code>assets/produtos/Atualizar Imagens.bat</code>.");
+    partes.push("Para editar, abra <code>app.js</code>. Para atualizar as fotos, crie a pasta do produto em <code>assets/produtos</code> e rode o <code>Publicar Site.bat</code> na raiz do projeto.");
   }
 
   if (partes.length === 0) {
