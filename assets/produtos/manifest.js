@@ -21,10 +21,15 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/controle-sem-fio-para-pc-e-celular/06.webp?v=132f776403"
   ],
   "headset gamer com microfone": [
-    "assets/produtos/headset-gamer-com-microfone/01.webp?v=4174de9b24",
-    "assets/produtos/headset-gamer-com-microfone/02.webp?v=207a83261d",
-    "assets/produtos/headset-gamer-com-microfone/03.webp?v=36fa938309",
-    "assets/produtos/headset-gamer-com-microfone/04.webp?v=cbf02def60"
+    "assets/produtos/headset-gamer-com-microfone/01.webp?v=7b92712ed2",
+    "assets/produtos/headset-gamer-com-microfone/02.webp?v=f4f661419b",
+    "assets/produtos/headset-gamer-com-microfone/03.webp?v=1feb0ae2a1",
+    "assets/produtos/headset-gamer-com-microfone/04.webp?v=9f7938b187",
+    "assets/produtos/headset-gamer-com-microfone/05.webp?v=7909189093",
+    "assets/produtos/headset-gamer-com-microfone/06.webp?v=04bbf710f0",
+    "assets/produtos/headset-gamer-com-microfone/07.webp?v=182e91d720",
+    "assets/produtos/headset-gamer-com-microfone/08.webp?v=d5c2271c7a",
+    "assets/produtos/headset-gamer-com-microfone/09.webp?v=847b4fcd1b"
   ],
   "hub usb c tantsa 8 em 1 para notebook e macbook com hdmi 4k rj45 e usb 3 0": [
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/01.webp?v=7ddb77efef",
@@ -36,10 +41,12 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/07.webp?v=f300f5a32e"
   ],
   "kit teclado e mouse gamer rgb usb com iluminacao led layout abnt2 bk g55": [
-    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/01.webp?v=9ed02bcca5",
-    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/02.webp?v=9ee152aca8",
-    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/03.webp?v=1e704b68d8",
-    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/04.webp?v=c69d8bbddd"
+    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/01.webp?v=c25c8a20f4",
+    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/02.webp?v=6d23538f41",
+    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/03.webp?v=37ffb07234",
+    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/04.webp?v=501c521b34",
+    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/05.webp?v=b56bf8bc59",
+    "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/06.webp?v=ba816184cb"
   ],
   "mouse gamer sem fio": [
     "assets/produtos/mouse-gamer-sem-fio/01.webp?v=9c7a1d8b72",
