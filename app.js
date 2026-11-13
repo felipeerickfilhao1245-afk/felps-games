@@ -2,9 +2,9 @@
    Vitrine de produtos — dados e interações
    ------------------------------------------------------------
    COMO EDITAR
-   1. Troque os dados de CONFIG (nome, iniciais, logo, subtitulo, bio e data).
-   2. Em PRODUTOS, troque "COLE_SEU_LINK_AQUI" pelo seu link de
-      afiliado gerado no hub do Mercado Livre.
+   1. Ajuste os dados de CONFIG (nome, iniciais, logo, subtitulo, bio e data).
+   2. Em PRODUTOS, cada link já é um meli.la real. Para trocar, use somente
+      um link de afiliado gerado no hub do Mercado Livre.
    3. As imagens entram automaticamente pela pasta
       "assets/produtos": crie uma subpasta com o nome do produto,
       coloque as fotos dentro e rode o "Publicar Site.bat" na raiz
