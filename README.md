@@ -2,7 +2,9 @@
 
 Vitrine independente de games e eletrônicos, com prós, contras, preços e links de afiliado do Mercado Livre.
 
-**Site publicado:** https://felipeerickfilhao1245-afk.github.io/felps-games/
+**Site publicado:** https://felpsgames.com.br/
+
+**Endereço do GitHub Pages:** https://felipeerickfilhao1245-afk.github.io/felps-games/ (redireciona para o domínio próprio quando o DNS está ativo)
 
 ## Conteúdo
 
@@ -12,6 +14,7 @@ Vitrine independente de games e eletrônicos, com prós, contras, preços e link
 - `manifest.webmanifest` — instalação como app
 - `assets/produtos/` — fotos dos produtos e `manifest.js` gerado automaticamente
 - `robots.txt` e `sitemap.xml` — indexação no Google
+- `CNAME` — domínio próprio usado pelo GitHub Pages
 - `.nojekyll` — desativa o Jekyll e publica os arquivos como estão
 
 ## Publicação
@@ -27,6 +30,18 @@ git push
 ```
 
 O GitHub Pages republica automaticamente em alguns minutos.
+
+## Domínio próprio
+
+O arquivo `CNAME` contém `felpsgames.com.br`. No DNS do registrador:
+
+| Tipo | Nome | Valor |
+|---|---|---|
+| A | `@` | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
+| AAAA | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
+| CNAME | `www` | `felipeerickfilhao1245-afk.github.io` |
+
+No GitHub: **Settings → Pages → Custom domain** = `felpsgames.com.br`, depois ative **Enforce HTTPS**.
 
 ## Aviso
 

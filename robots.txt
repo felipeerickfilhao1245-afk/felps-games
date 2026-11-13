@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://felipeerickfilhao1245-afk.github.io/felps-games/sitemap.xml
+Sitemap: https://felpsgames.com.br/sitemap.xml
