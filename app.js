@@ -24,8 +24,31 @@ const CONFIG = {
   logo: "assets/logo-controle.svg",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso avaliações e mostro os contras antes de recomendar.",
-  atualizado: "2026-11-13",
+  atualizado: "2026-11-14",
   dadosConfirmados: true
+};
+
+/* Emojis locais (Twemoji, CC-BY 4.0). Ver assets/emojis/LEIA-ME.md. */
+const EMOJIS = {
+  "🎮": "assets/emojis/1f3ae.svg",
+  "🎧": "assets/emojis/1f3a7.svg",
+  "🔌": "assets/emojis/1f50c.svg",
+  "⌨️": "assets/emojis/2328.svg",
+  "⌨": "assets/emojis/2328.svg",
+  "🖱️": "assets/emojis/1f5b1.svg",
+  "🖱": "assets/emojis/1f5b1.svg",
+  "🔊": "assets/emojis/1f50a.svg",
+  "💾": "assets/emojis/1f4be.svg",
+  "📡": "assets/emojis/1f4e1.svg",
+  "🛒": "assets/emojis/1f6d2.svg"
+};
+
+const EMOJI_PADRAO = "🛒";
+
+const EMOJIS_CATEGORIA = {
+  "Todos": "🛒",
+  "Games": "🎮",
+  "Eletrônicos": "🔌"
 };
 
 const PRODUTOS = [
@@ -90,12 +113,12 @@ const PRODUTOS = [
     destaque: 3
   },
   {
-    nome: "Kit Teclado e Mouse Gamer RGB USB com Iluminação LED Layout ABNT2 BK-G55",
+    nome: "Kit Teclado Mouse Gamer Completo Barato Com Fio Cabo De 1,5m Led Com Iluminação Rgb Desktop Conexão Usb Cor Preto Usar Com Headset Acessorios Pc Mecanico Jogos - Goodvision",
     nicho: "Games",
     emoji: "⌨️",
     imagem: "",
-    link: "https://meli.la/1SGrVhM",
-    preco: "R$ 45,39",
+    link: "https://meli.la/13sUoZ8",
+    preco: "R$ 57,22",
     nota: 4.7,
     avaliacoes: 538,
     descricao: "Para quem quer um kit completo para jogar e trabalhar, com teclado e mouse iluminados e layout ABNT2.",
@@ -130,12 +153,12 @@ const PRODUTOS = [
     destaque: null
   },
   {
-    nome: "Caixa de som Bluetooth portátil",
+    nome: "Caixa Amplificada Connect Lights Cm-400 Mondial Cor Preto",
     nicho: "Eletrônicos",
     emoji: "🔊",
     imagem: "",
     link: "https://meli.la/1K3Wtax",
-    preco: "R$ 474,05",
+    preco: "R$ 514,04",
     nota: 4.8,
     avaliacoes: 1400,
     descricao: "Para levar música para o quarto, a sala ou a área externa sem depender do som do celular.",
@@ -169,6 +192,26 @@ const PRODUTOS = [
     testado: false,
     destaque: null
   },
+  {
+    nome: "Kit 2 Receptores VX10 Com Antena Parabólica LNB Duplo Alto Ganho, Kit Completo Para Duas Tv's",
+    nicho: "Eletrônicos",
+    emoji: "📡",
+    imagem: "",
+    link: "https://meli.la/1EzkMBb",
+    preco: "R$ 379,90",
+    nota: 4.8,
+    avaliacoes: 1400,
+    descricao: "Kit completo para duas TVs, com dois receptores VX10, antena parabólica de 60 cm com LNB duplo, dois cabos de 15 m e mais de 90 canais sem mensalidade. Compatível com a Nova Parabólica SKY; canais pagos são opcionais. O anúncio informa garantia de 2 anos.",
+    publico: "quem quer equipar duas TVs com sinal de satélite sem mensalidade",
+    pros: [
+      "Dois receptores para duas TVs",
+      "Mais de 90 canais sem mensalidade",
+      "Antena, LNB duplo e cabos inclusos"
+    ],
+    atencao: "A instalação e a regulagem da antena podem exigir um técnico. A lista de canais, a cobertura e a compatibilidade variam por região; confira no anúncio se os canais pagos exigem assinatura à parte.",
+    testado: false,
+    destaque: null
+  },
 ];
 
 /* ============================================================
@@ -193,6 +236,13 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function emojiHtml(emoji, classe = "") {
+  const caractere = String(emoji || EMOJI_PADRAO);
+  const arquivo = EMOJIS[caractere] || EMOJIS[EMOJI_PADRAO];
+  const classes = classe ? `emoji ${classe}` : "emoji";
+  return `<span class="${classes}" aria-hidden="true"><img src="${arquivo}" alt="" width="36" height="36" loading="lazy" decoding="async" onerror="this.src='assets/emojis/1f6d2.svg'; this.onerror=null;" /></span>`;
 }
 
 function normalize(value) {
@@ -278,7 +328,7 @@ function imagensDoProduto(produto) {
 }
 
 function mediaHtml(produto) {
-  const emoji = `<span class="media-fallback" aria-hidden="true">${escapeHtml(produto.emoji || "🛒")}</span>`;
+  const emoji = emojiHtml(produto.emoji, "media-fallback");
   const imagens = imagensDoProduto(produto);
   if (imagens.length === 0) return emoji;
 
@@ -365,7 +415,10 @@ function renderChips() {
   const categorias = ["Todos", ...new Set(PRODUTOS.map((p) => p.nicho).filter(Boolean))];
 
   $("chips").innerHTML = categorias
-    .map((categoria) => `<button class="chip" type="button" data-categoria="${escapeHtml(categoria)}" aria-pressed="${categoria === state.categoria}">${escapeHtml(categoria)}</button>`)
+    .map((categoria) => {
+      const emoji = emojiHtml(EMOJIS_CATEGORIA[categoria] || EMOJI_PADRAO, "chip-emoji");
+      return `<button class="chip" type="button" data-categoria="${escapeHtml(categoria)}" aria-pressed="${categoria === state.categoria}">${emoji}<span>${escapeHtml(categoria)}</span></button>`;
+    })
     .join("");
 }
 

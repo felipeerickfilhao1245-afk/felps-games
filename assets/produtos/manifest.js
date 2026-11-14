@@ -4,7 +4,7 @@
    ============================================================ */
 
 window.IMAGENS_PRODUTOS = {
-  "caixa de som bluetooth portatil": [
+  "caixa amplificada connect lights cm 400 mondial cor preto": [
     "assets/produtos/caixa-de-som-bluetooth-portatil/01.webp?v=9a9e204993",
     "assets/produtos/caixa-de-som-bluetooth-portatil/02.webp?v=71e2818e17",
     "assets/produtos/caixa-de-som-bluetooth-portatil/03.webp?v=bdcd2d641e",
@@ -40,7 +40,16 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/06.webp?v=0f0e85ca45",
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/07.webp?v=f300f5a32e"
   ],
-  "kit teclado e mouse gamer rgb usb com iluminacao led layout abnt2 bk g55": [
+  "kit 2 receptores vx10 com antena parabolica lnb duplo alto ganho kit completo para duas tv s": [
+    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/01.webp?v=57d50bda3c",
+    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/02.webp?v=db37587bc5",
+    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/03.webp?v=aa4d903a4f",
+    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/04.webp?v=0535a3d79c",
+    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/05.webp?v=8e921e0dfb",
+    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/06.webp?v=70a1770ff1",
+    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/07.webp?v=8b4f400b0d"
+  ],
+  "kit teclado mouse gamer completo barato com fio cabo de 1 5m led com iluminacao rgb desktop conexao usb cor preto usar com headset acessorios pc mecanico jogos goodvision": [
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/01.webp?v=c25c8a20f4",
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/02.webp?v=6d23538f41",
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/03.webp?v=37ffb07234",

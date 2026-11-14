@@ -528,6 +528,19 @@ button, input, select { font: inherit; }
 
 .card--featured { border-color: #e7cf6b; }
 
+.emoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.emoji img {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
 .card-media {
   position: relative;
   display: grid;
@@ -561,8 +574,19 @@ button, input, select { font: inherit; }
 }
 
 .card-media > .media-fallback {
+  width: 46%;
+  max-width: 170px;
   transform: translateY(-2px);
   filter: drop-shadow(0 8px 12px rgba(23, 24, 28, 0.16));
+}
+
+.card-media > .media-fallback img {
+  position: static;
+  z-index: auto;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  object-fit: contain;
 }
 
 .media-count {
@@ -882,6 +906,9 @@ button, input, select { font: inherit; }
 
 .chip {
   flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   padding: 8px 14px;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
@@ -892,6 +919,8 @@ button, input, select { font: inherit; }
   cursor: pointer;
   transition: background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
 }
+
+.chip-emoji { font-size: 1rem; }
 
 .chip:hover { border-color: var(--ink); }
 
@@ -1110,6 +1139,12 @@ footer {
   padding-top: 16px;
   border-top: 1px solid var(--line);
   font-size: 0.74rem;
+}
+
+.footer-bottom a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* ---------- Modo de edição (só em file://) ---------- */
