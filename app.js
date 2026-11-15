@@ -225,11 +225,11 @@ const PRODUTOS = [
     publico: "Para quem quer uma tomada moderna",
     pros: [
       
-      "Voltagem: 127/220V",
-      "Frequência de 60Hz",
-      "Possui potência de 2.5 kW",
-      "Tomada tipo 5 Tomadas 10A / 16A / 20A",
-      "Inclui as seguintes portas e conectores: 3 USB, 3 USB-C, Indução."
+     "Voltagem: 127/220V",
+     "Frequência de 60Hz",
+     "Possui potência de 2.5 kW",
+     "Tomada tipo 5 Tomadas 10A / 16A / 20A",
+     "Inclui as seguintes portas e conectores: 3 USB, 3 USB-C, Indução",
     ],
     atencao: " .",
     testado: false,
