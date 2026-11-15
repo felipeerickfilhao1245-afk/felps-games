@@ -217,12 +217,12 @@ const PRODUTOS = [
     destaque: null
   },
   {
-    nome: "Kit 2 Receptores VX10 Com Antena Parabólica LNB Duplo Alto Ganho, Kit Completo Para Duas Tv's",
+    nome: "Receptor Vivensis VX10 Nova Parabolica TV Sem Mensalidade antena OI SKY Claro Vivo Cor Preto",
     pasta: "kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo",
     nicho: "Eletrônicos",
     emoji: "📡",
     imagem: "",
-    link: "https://meli.la/1EzkMBb",
+    link: "https://meli.la/2y4G4xe",
     preco: "R$ 114,28",
     nota: 4.8,
     avaliacoes: 25963,
