@@ -6,9 +6,10 @@
    2. Em PRODUTOS, cada link já é um meli.la real. Para trocar, use somente
       um link de afiliado gerado no hub do Mercado Livre.
    3. As imagens entram automaticamente pela pasta
-      "assets/produtos": crie uma subpasta com o nome do produto,
+      "assets/produtos": crie uma subpasta com o nome definido em "pasta",
       coloque as fotos dentro e rode o "Publicar Site, faz backup, envia ao GitHub.bat" na raiz
-      do projeto.
+      do projeto. O campo "pasta" é o identificador fixo das fotos: ele não
+      deve mudar quando você encurtar ou corrigir o título do produto.
       O campo "imagem" continua valendo para uma imagem manual
       avulsa, por exemplo "assets/produto.jpg".
    4. "destaque": 1 a 9 coloca o produto nos destaques.
@@ -56,6 +57,7 @@ const EMOJIS_CATEGORIA = {
 const PRODUTOS = [
   {
     nome: "Controle Sem Fio Joystick REDFIN Bluetooth Compatível Para Ps4 Videogame Tv Samsung Pc P4 Ps 4 Manete Pc Gamer Tv Smart Controle Bluetooth Celular Headset Sem Fio Com P2 Marca Redfin",
+    pasta: "controle-sem-fio-para-pc-e-celular",
     nicho: "Games",
     emoji: "🎮",
     imagem: "",
@@ -78,6 +80,7 @@ const PRODUTOS = [
   },
   {
     nome: "Headset gamer com microfone",
+    pasta: "headset-gamer-com-microfone",
     nicho: "Games",
     emoji: "🎧",
     imagem: "",
@@ -100,6 +103,7 @@ const PRODUTOS = [
   },
   {
     nome: "Hub USB-C Tantsa 8 em 1",
+    pasta: "hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0",
     nicho: "Eletrônicos",
     emoji: "🔌",
     imagem: "",
@@ -122,6 +126,7 @@ const PRODUTOS = [
   },
   {
     nome: "Kit Teclado Mouse Gamer Completo Barato Com Fio Cabo De 1,5m Led Com Iluminação Rgb Desktop Conexão Usb Cor Preto Usar Com Headset Acessorios Pc Mecanico Jogos - Goodvision",
+    pasta: "kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55",
     nicho: "Games",
     emoji: "⌨️",
     imagem: "",
@@ -144,6 +149,7 @@ const PRODUTOS = [
   },
   {
     nome: "Mouse gamer sem fio",
+    pasta: "mouse-gamer-sem-fio",
     nicho: "Games",
     emoji: "🖱️",
     imagem: "",
@@ -166,6 +172,7 @@ const PRODUTOS = [
   },
   {
     nome: "Caixa Amplificada Connect Lights Cm-400 Mondial Cor Preto",
+    pasta: "caixa-de-som-bluetooth-portatil",
     nicho: "Eletrônicos",
     emoji: "🔊",
     imagem: "",
@@ -188,6 +195,7 @@ const PRODUTOS = [
   },
   {
     nome: "Pen Drive Multilaser 2 em 1 16 GB",
+    pasta: "pen-drive-multilaser-2-em-1-16-gb",
     nicho: "Eletrônicos",
     emoji: "💾",
     imagem: "",
@@ -210,6 +218,7 @@ const PRODUTOS = [
   },
   {
     nome: "Kit 2 Receptores VX10 Com Antena Parabólica LNB Duplo Alto Ganho, Kit Completo Para Duas Tv's",
+    pasta: "kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo",
     nicho: "Eletrônicos",
     emoji: "📡",
     imagem: "",
@@ -232,6 +241,7 @@ const PRODUTOS = [
   },
   {
     nome: "Extensão Filtro de Linha B-MAX BM-10PD Turbo PD Régua 5 Tomadas USB-C Indução",
+    pasta: "extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao",
     nicho: "Eletrônicos",
     emoji: "🔌",
     imagem: "",
@@ -299,6 +309,11 @@ function chaveImagem(value) {
   return normalize(value);
 }
 
+function chaveProduto(produto) {
+  // "pasta" é estável; o nome pode mudar sem perder a galeria.
+  return chaveImagem(produto.pasta || produto.nome);
+}
+
 function precoNumero(preco) {
   const limpo = String(preco || "").replace(/[^\d,]/g, "").replace(",", ".");
   return Number(limpo) || 0;
@@ -347,7 +362,7 @@ function bindProfile() {
 
 function imagensDoProduto(produto) {
   const catalogo = window.IMAGENS_PRODUTOS || {};
-  const chave = chaveImagem(produto.nome);
+  const chave = chaveProduto(produto);
   const lista = Array.isArray(catalogo[chave]) ? catalogo[chave].filter(Boolean) : [];
 
   if (lista.length) return lista;

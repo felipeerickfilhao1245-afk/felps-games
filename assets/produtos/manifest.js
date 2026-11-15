@@ -4,7 +4,7 @@
    ============================================================ */
 
 window.IMAGENS_PRODUTOS = {
-  "caixa amplificada connect lights cm 400 mondial cor preto": [
+  "caixa de som bluetooth portatil": [
     "assets/produtos/caixa-de-som-bluetooth-portatil/01.webp?v=9a9e204993",
     "assets/produtos/caixa-de-som-bluetooth-portatil/02.webp?v=71e2818e17",
     "assets/produtos/caixa-de-som-bluetooth-portatil/03.webp?v=bdcd2d641e",
@@ -12,7 +12,7 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/caixa-de-som-bluetooth-portatil/05.webp?v=da494cbeb5",
     "assets/produtos/caixa-de-som-bluetooth-portatil/06.webp?v=0ad90687b8"
   ],
-  "controle sem fio joystick redfin bluetooth compativel para ps4 videogame tv samsung pc p4 ps 4 manete pc gamer tv smart controle bluetooth celular headset sem fio com p2 marca redfin": [
+  "controle sem fio para pc e celular": [
     "assets/produtos/controle-sem-fio-para-pc-e-celular/01.webp?v=aca4265e53",
     "assets/produtos/controle-sem-fio-para-pc-e-celular/02.webp?v=a61c2a6f30",
     "assets/produtos/controle-sem-fio-para-pc-e-celular/03.webp?v=f343fe52ae",
@@ -20,7 +20,7 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/controle-sem-fio-para-pc-e-celular/05.webp?v=f3e33dd1a9",
     "assets/produtos/controle-sem-fio-para-pc-e-celular/06.webp?v=132f776403"
   ],
-  "extensao filtro de linha b max bm 10pd turbo pd regua 5 tomadas usb c inducao": [
+  "extensao filtro linha turbo pd regua 5 tomadas usb c inducao": [
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/01.webp?v=b314cc2e66",
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/02.webp?v=f5a552643f",
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/03.webp?v=9ce70776c9",
@@ -39,7 +39,7 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/headset-gamer-com-microfone/08.webp?v=d5c2271c7a",
     "assets/produtos/headset-gamer-com-microfone/09.webp?v=847b4fcd1b"
   ],
-  "hub usb c tantsa 8 em 1": [
+  "hub usb c tantsa 8 em 1 para notebook e macbook com hdmi 4k rj45 e usb 3 0": [
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/01.webp?v=7ddb77efef",
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/02.webp?v=ae66e7b587",
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/03.webp?v=f11eed9ef5",
@@ -48,7 +48,7 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/06.webp?v=0f0e85ca45",
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/07.webp?v=f300f5a32e"
   ],
-  "kit 2 receptores vx10 com antena parabolica lnb duplo alto ganho kit completo para duas tv s": [
+  "kit 2 receptores vx10 com antena parabolica lnb duplo": [
     "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/01.webp?v=633bb57e72",
     "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/02.webp?v=6ce4c980fb",
     "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/03.webp?v=22a9cd1ba8",
@@ -59,7 +59,7 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/08.webp?v=8d88a68c45",
     "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/09.webp?v=e57f88b703"
   ],
-  "kit teclado mouse gamer completo barato com fio cabo de 1 5m led com iluminacao rgb desktop conexao usb cor preto usar com headset acessorios pc mecanico jogos goodvision": [
+  "kit teclado e mouse gamer rgb usb com iluminacao led layout abnt2 bk g55": [
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/01.webp?v=c25c8a20f4",
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/02.webp?v=6d23538f41",
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/03.webp?v=37ffb07234",
