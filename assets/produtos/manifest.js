@@ -39,7 +39,7 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/headset-gamer-com-microfone/08.webp?v=d5c2271c7a",
     "assets/produtos/headset-gamer-com-microfone/09.webp?v=847b4fcd1b"
   ],
-  "hub usb c tantsa 8 em 1 para notebook e macbook com hdmi 4k rj45 e usb 3 0": [
+  "hub usb c tantsa 8 em 1": [
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/01.webp?v=7ddb77efef",
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/02.webp?v=ae66e7b587",
     "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/03.webp?v=f11eed9ef5",
@@ -74,8 +74,8 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/mouse-gamer-sem-fio/04.webp?v=b918f3a3e2",
     "assets/produtos/mouse-gamer-sem-fio/05.webp?v=64c2ff2f6c"
   ],
-  "pen drive multilaser 2 em 1 leitor usb cartao de memoria classe 10 16gb": [
-    "assets/produtos/pen-drive-multilaser-2-em-1-leitor-usb-cartao-de-memoria-classe-10-16gb/01.webp?v=e92daaeb3b",
-    "assets/produtos/pen-drive-multilaser-2-em-1-leitor-usb-cartao-de-memoria-classe-10-16gb/02.webp?v=f1090445a0"
+  "pen drive multilaser 2 em 1 16 gb": [
+    "assets/produtos/pen-drive-multilaser-2-em-1-16-gb/01.webp?v=e92daaeb3b",
+    "assets/produtos/pen-drive-multilaser-2-em-1-16-gb/02.webp?v=f1090445a0"
   ]
 };

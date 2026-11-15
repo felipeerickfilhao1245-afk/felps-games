@@ -99,7 +99,7 @@ const PRODUTOS = [
     destaque: 2
   },
   {
-    nome: "Hub USB-C Tantsa 8 em 1 para Notebook e MacBook com HDMI 4K, RJ45 e USB 3.0",
+    nome: "Hub USB-C Tantsa 8 em 1",
     nicho: "Eletrônicos",
     emoji: "🔌",
     imagem: "",
@@ -107,7 +107,7 @@ const PRODUTOS = [
     preco: "R$ 35,85",
     nota: 4.7,
     avaliacoes: 1300,
-    estoque: true,
+    estoque: false,
     full: true,
     descricao: "Para conectar monitor, cartão de memória, HD e outros acessórios em notebook com poucas portas.",
     publico: "quem usa notebook ou tablet com poucas conexões",
@@ -187,7 +187,7 @@ const PRODUTOS = [
     destaque: null
   },
   {
-    nome: "Pen Drive Multilaser 2 Em 1 Leitor Usb Cartão De Memória Classe 10 16gb",
+    nome: "Pen Drive Multilaser 2 em 1 16 GB",
     nicho: "Eletrônicos",
     emoji: "💾",
     imagem: "",
@@ -195,7 +195,7 @@ const PRODUTOS = [
     preco: "R$ 39,99",
     nota: 4.8,
     avaliacoes: 1400,
-    estoque: true,
+    estoque: false,
     full: true,
     descricao: "Para transferir arquivos e ler cartões de memória sem precisar de outro adaptador.",
     publico: "quem precisa levar arquivos ou ler cartões Micro SD",
