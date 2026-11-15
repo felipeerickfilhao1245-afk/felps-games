@@ -20,7 +20,7 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/controle-sem-fio-para-pc-e-celular/05.webp?v=f3e33dd1a9",
     "assets/produtos/controle-sem-fio-para-pc-e-celular/06.webp?v=132f776403"
   ],
-  "extensao filtro linha turbo pd regua 5 tomadas usb c induca": [
+  "extensao filtro de linha b max bm 10pd turbo pd regua 5 tomadas usb c inducao": [
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/01.webp?v=b314cc2e66",
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/02.webp?v=f5a552643f",
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/03.webp?v=9ce70776c9",

@@ -24,7 +24,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso avaliações e mostro os contras antes de recomendar.",
-  atualizado: "2026-11-14",
+  atualizado: "2026-11-15",
   dadosConfirmados: true
 };
 
@@ -212,26 +212,24 @@ const PRODUTOS = [
     testado: false,
     destaque: null
   },
-   {
-    nome: "Extensão Filtro Linha Turbo Pd Régua 5 Tomadas Usb C Induçã",
+  {
+    nome: "Extensão Filtro de Linha B-MAX BM-10PD Turbo PD Régua 5 Tomadas USB-C Indução",
     nicho: "Eletrônicos",
-    emoji: "📡",
+    emoji: "🔌",
     imagem: "",
     link: "https://meli.la/1ZmLw38",
     preco: "R$ 61,09",
     nota: 4.8,
     avaliacoes: 1400,
-    descricao: "Extensão Filtro de Linha Turbo PD Régua 20 com USB e USB-C (Cabo 2 m)Organize sua mesa e conecte vários aparelhos em um único ponto com mais praticidade no dia a dia. Ideal para casa, escritório e área de estudos, com alcance de 2 metros para posicionar onde for mais conveniente.",
-    publico: "Para quem quer uma tomada moderna",
+    descricao: "Régua B-MAX BM-10PD com 5 tomadas (3 de 10 A e 2 de 20 A), 3 portas USB-A, 3 USB-C e carregador por indução de 10 W. Tem cabo de 2 m, é bivolt (110–220 V) e traz proteção contra sobrecarga, curto-circuito, superaquecimento e surtos de tensão (DPS).",
+    publico: "quem quer concentrar tomadas, carregadores USB e carregamento sem fio em um só ponto",
     pros: [
-      
-     "Voltagem: 127/220V",
-     "Frequência de 60Hz",
-     "Possui potência de 2.5 kW",
-     "Tomada tipo 5 Tomadas 10A / 16A / 20A",
-     "Inclui as seguintes portas e conectores: 3 USB, 3 USB-C, Indução"
+      "5 tomadas: 3 de 10 A e 2 de 20 A",
+      "3 USB-A, 3 USB-C e indução de 10 W",
+      "Proteção contra surtos, sobrecarga e superaquecimento",
+      "Cabo de 2 m e bivolt automático 110–220 V"
     ],
-    atencao: " .",
+    atencao: "O plugue de entrada é de 10 A: as tomadas de 20 A não aumentam o limite do cabo. Some o consumo dos aparelhos antes de ligar equipamentos de alta potência. As portas USB-C somam 10,5 W e a indução, 10 W — não espere carregamento rápido de notebook.",
     testado: false,
     destaque: null
   },
