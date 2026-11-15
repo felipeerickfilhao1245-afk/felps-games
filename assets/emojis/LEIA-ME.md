@@ -42,6 +42,6 @@ quando um produto ainda não tem foto.
 2. Salve o arquivo nesta pasta com o nome do código Unicode, por exemplo
    `1f4fa.svg`.
 3. Registre o caractere e o caminho no mapa `EMOJIS` de `app.js`.
-4. Rode `Publicar Site.bat` para copiar a pasta para o repositório.
+4. Rode `Publicar Site, faz backup, envia ao GitHub.bat` para copiar a pasta para o repositório.
 
 Mantenha o crédito ao Twemoji no rodapé e os arquivos de licença nesta pasta.

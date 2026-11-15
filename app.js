@@ -7,14 +7,16 @@
       um link de afiliado gerado no hub do Mercado Livre.
    3. As imagens entram automaticamente pela pasta
       "assets/produtos": crie uma subpasta com o nome do produto,
-      coloque as fotos dentro e rode o "Publicar Site.bat" na raiz
+      coloque as fotos dentro e rode o "Publicar Site, faz backup, envia ao GitHub.bat" na raiz
       do projeto.
       O campo "imagem" continua valendo para uma imagem manual
       avulsa, por exemplo "assets/produto.jpg".
    4. "destaque": 1 a 9 coloca o produto nos destaques.
       Use null nos produtos que não estão em destaque.
+      "estoque" e "full" ligam ou desligam as linhas
+      "Estoque disponível" e "Armazenado e enviado pelo Mercado Livre".
    5. Só mude "dadosConfirmados" para true depois de conferir
-      links, preços, notas e avaliações reais de todos os produtos.
+      links, preços, estoque e envio de todos os produtos.
    6. Não remova o aviso de afiliado nem o rel="sponsored".
    ============================================================ */
 
@@ -23,7 +25,7 @@ const CONFIG = {
   iniciais: "FG",
   logo: "assets/logo-controle.svg",
   subtitulo: "Games & Eletrônicos",
-  bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso avaliações e mostro os contras antes de recomendar.",
+  bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso especificações e mostro os contras antes de recomendar.",
   atualizado: "2026-11-15",
   dadosConfirmados: true
 };
@@ -61,6 +63,8 @@ const PRODUTOS = [
     preco: "R$ 54,90",
     nota: 4.7,
     avaliacoes: 2100,
+    estoque: true,
+    full: true,
     descricao: "Para jogar no PC, notebook ou celular sem depender de cabo. Uma opção para começar com um setup mais limpo.",
     publico: "quem joga no PC, notebook ou celular",
     pros: [
@@ -81,6 +85,8 @@ const PRODUTOS = [
     preco: "R$ 94,09",
     nota: 4.6,
     avaliacoes: 1800,
+    estoque: true,
+    full: true,
     descricao: "Para jogar e conversar com o time sem precisar de outro microfone. Deixa o áudio do jogo e das chamadas em um só fone.",
     publico: "quem joga online e participa de chamadas",
     pros: [
@@ -88,7 +94,7 @@ const PRODUTOS = [
       "Áudio para jogos e chamadas",
       "Ajuste na cabeça"
     ],
-    atencao: "Peso, conforto e isolamento variam conforme o modelo. Leia as avaliações sobre pressão na cabeça antes de comprar.",
+    atencao: "Peso, conforto e isolamento variam conforme o modelo. Confira no anúncio os relatos sobre pressão na cabeça antes de comprar.",
     testado: false,
     destaque: 2
   },
@@ -101,6 +107,8 @@ const PRODUTOS = [
     preco: "R$ 35,85",
     nota: 4.7,
     avaliacoes: 1300,
+    estoque: true,
+    full: true,
     descricao: "Para conectar monitor, cartão de memória, HD e outros acessórios em notebook com poucas portas.",
     publico: "quem usa notebook ou tablet com poucas conexões",
     pros: [
@@ -121,6 +129,8 @@ const PRODUTOS = [
     preco: "R$ 58,99",
     nota: 4.7,
     avaliacoes: 538,
+    estoque: true,
+    full: true,
     descricao: "Para quem quer um kit completo para jogar e trabalhar, com teclado e mouse iluminados e layout ABNT2.",
     publico: "quem joga e trabalha na mesma mesa",
     pros: [
@@ -128,7 +138,7 @@ const PRODUTOS = [
       "Iluminação RGB",
       "Layout ABNT2 com teclado numérico"
     ],
-    atencao: "Confira nas avaliações o tipo de tecla, o nível de ruído e o tamanho do teclado antes de comprar.",
+    atencao: "Confira no anúncio o tipo de tecla, o nível de ruído e o tamanho do teclado antes de comprar.",
     testado: false,
     destaque: null
   },
@@ -141,6 +151,8 @@ const PRODUTOS = [
     preco: "R$ 21,90",
     nota: 4.8,
     avaliacoes: 1600,
+    estoque: true,
+    full: true,
     descricao: "Para jogar com mais liberdade de movimento e menos cabos na mesa. O ajuste de sensibilidade ajuda em estilos diferentes de jogo.",
     publico: "quem quer uma mesa mais limpa para jogar",
     pros: [
@@ -161,6 +173,8 @@ const PRODUTOS = [
     preco: "R$ 538,17",
     nota: 4.8,
     avaliacoes: 1400,
+    estoque: true,
+    full: true,
     descricao: "Para levar música para o quarto, a sala ou a área externa sem depender do som do celular.",
     publico: "quem quer som portátil para casa ou viagem",
     pros: [
@@ -181,6 +195,8 @@ const PRODUTOS = [
     preco: "R$ 39,99",
     nota: 4.8,
     avaliacoes: 1400,
+    estoque: true,
+    full: true,
     descricao: "Para transferir arquivos e ler cartões de memória sem precisar de outro adaptador.",
     publico: "quem precisa levar arquivos ou ler cartões Micro SD",
     pros: [
@@ -201,6 +217,8 @@ const PRODUTOS = [
     preco: "R$ 379,90",
     nota: 4.8,
     avaliacoes: 1400,
+    estoque: true,
+    full: true,
     descricao: "Kit completo para duas TVs, com dois receptores VX10, antena parabólica de 60 cm com LNB duplo, dois cabos de 15 m e mais de 90 canais sem mensalidade. Compatível com a Nova Parabólica SKY; canais pagos são opcionais. O anúncio informa garantia de 2 anos.",
     publico: "quem quer equipar duas TVs com sinal de satélite sem mensalidade",
     pros: [
@@ -221,6 +239,8 @@ const PRODUTOS = [
     preco: "R$ 61,09",
     nota: 4.8,
     avaliacoes: 1400,
+    estoque: true,
+    full: true,
     descricao: "Régua B-MAX BM-10PD com 5 tomadas (3 de 10 A e 2 de 20 A), 3 portas USB-A, 3 USB-C e carregador por indução de 10 W. Tem cabo de 2 m, é bivolt (110–220 V) e traz proteção contra sobrecarga, curto-circuito, superaquecimento e surtos de tensão (DPS).",
     publico: "quem quer concentrar tomadas, carregadores USB e carregamento sem fio em um só ponto",
     pros: [
@@ -282,20 +302,6 @@ function chaveImagem(value) {
 function precoNumero(preco) {
   const limpo = String(preco || "").replace(/[^\d,]/g, "").replace(",", ".");
   return Number(limpo) || 0;
-}
-
-function notaFormatada(nota) {
-  return Number(nota || 0).toFixed(1).replace(".", ",");
-}
-
-function estrelasHtml(nota) {
-  const valor = Math.max(0, Math.min(5, Number(nota) || 0));
-  const porcentagem = (valor / 5) * 100;
-  return `<span class="stars" aria-hidden="true" style="--nota-pct:${porcentagem.toFixed(1)}%">★★★★★</span>`;
-}
-
-function avaliacoesFormatadas(total) {
-  return Number(total || 0).toLocaleString("pt-BR");
 }
 
 function formatarData(iso) {
@@ -381,7 +387,7 @@ function botaoHtml(produto) {
   return `<a class="btn btn--dark btn--block" href="${escapeHtml(produto.link)}" rel="sponsored noopener noreferrer" aria-label="Comprar ${escapeHtml(produto.nome)} no Mercado Livre">
       Comprar no Mercado Livre <small>↗</small>
     </a>
-    <p class="affiliate-note">Você será direcionado ao Mercado Livre · link de afiliado${produto.testado ? " · produto testado por mim" : " · análise por avaliações"}</p>`;
+    <p class="affiliate-note">Você será direcionado ao Mercado Livre · link de afiliado${produto.testado ? " · produto testado por mim" : " · análise por especificações"}</p>`;
 }
 
 function cardHtml(produto, destaque) {
@@ -394,6 +400,9 @@ function cardHtml(produto, destaque) {
     .map((item) => `<li>${escapeHtml(item)}</li>`)
     .join("");
 
+  const temEstoque = produto.estoque !== false;
+  const entregaFull = produto.full !== false;
+
   return `<article class="card${destaque ? " card--featured" : ""}">
     <div class="card-media">
       ${mediaHtml(produto)}
@@ -405,9 +414,8 @@ function cardHtml(produto, destaque) {
       <p class="desc">${escapeHtml(produto.descricao)}</p>
       <p class="ideal"><strong>Ideal para:</strong> ${escapeHtml(produto.publico)}</p>
       <div class="meta-row">
-        ${estrelasHtml(produto.nota)}
-        <span class="score">${notaFormatada(produto.nota)}</span>
-        <span>· ${avaliacoesFormatadas(produto.avaliacoes)} avaliações</span>
+        <span class="stock${temEstoque ? "" : " stock--off"}">${temEstoque ? "Estoque disponível" : "Estoque indisponível"}</span>
+        <span class="shipping">${entregaFull ? "Armazenado e enviado pelo Mercado Livre" : "Enviado pelo vendedor"}</span>
       </div>
       <div class="price-row">
         <span class="price">${escapeHtml(produto.preco)}</span>
@@ -455,8 +463,6 @@ function produtosFiltrados() {
 
   if (state.ordem === "menor-preco") {
     lista = [...lista].sort((a, b) => precoNumero(a.preco) - precoNumero(b.preco));
-  } else if (state.ordem === "melhor-nota") {
-    lista = [...lista].sort((a, b) => (Number(b.nota) - Number(a.nota)) || (Number(b.avaliacoes) - Number(a.avaliacoes)));
   } else {
     lista = [...lista].sort((a, b) => {
       const destaqueA = a.destaque || 99;
@@ -483,7 +489,7 @@ function showStatusBanner() {
   const partes = [];
 
   if (!CONFIG.dadosConfirmados) {
-    partes.push("<strong>Dados de exemplo:</strong> preços, notas e avaliações são referências e podem estar desatualizados. Confirme tudo no anúncio antes de comprar.");
+    partes.push("<strong>Dados de exemplo:</strong> preços, estoque e envio são referências e podem estar desatualizados. Confirme tudo no anúncio antes de comprar.");
   }
 
   if (semLink.length > 0) {
@@ -491,7 +497,7 @@ function showStatusBanner() {
   }
 
   if (local) {
-    partes.push("Para editar, abra <code>app.js</code>. Para atualizar as fotos, crie a pasta do produto em <code>assets/produtos</code> e rode o <code>Publicar Site.bat</code> na raiz do projeto.");
+    partes.push("Para editar, abra <code>app.js</code>. Para atualizar as fotos, crie a pasta do produto em <code>assets/produtos</code> e rode o <code>Publicar Site, faz backup, envia ao GitHub.bat</code> na raiz do projeto.");
   }
 
   if (partes.length === 0) {

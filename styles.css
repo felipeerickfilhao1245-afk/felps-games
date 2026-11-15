@@ -719,32 +719,37 @@ button, input, select { font: inherit; }
 
 .meta-row {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2px;
   margin-bottom: 12px;
   font-size: 0.78rem;
+  line-height: 1.4;
   color: var(--muted);
 }
 
-.stars {
-  color: #b8860b;
-  letter-spacing: 0.06em;
-}
-
-/* A nota preenche as estrelas proporcionalmente (4,7 = 94%). */
-@supports ((-webkit-background-clip: text) or (background-clip: text)) {
-  .stars {
-    color: transparent;
-    background-image: linear-gradient(90deg, #b8860b var(--nota-pct, 100%), #d9d3c4 0);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-}
-
-.score {
+.stock {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-weight: 800;
-  color: var(--ink);
+  color: var(--green);
+}
+
+.stock::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+
+.stock--off {
+  color: #b3261e;
+}
+
+.shipping {
+  color: var(--ink-soft);
 }
 
 .price-row {

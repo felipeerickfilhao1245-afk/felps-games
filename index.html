@@ -60,7 +60,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css?v=7d47782a37" />
+  <link rel="stylesheet" href="styles.css?v=3093c235d2" />
 
   <!--
     ============================================================
@@ -73,18 +73,18 @@
        - use "destaque": 1 a 9 para os destaques.
     3. Para as fotos: crie uma pasta com o nome do produto em
        "assets/produtos", coloque as imagens dentro e rode o
-       "Publicar Site.bat" na raiz do projeto.
+       "Publicar Site, faz backup, envia ao GitHub.bat" na raiz do projeto.
        Todas aparecem como galeria.
     4. Só mude dadosConfirmados para true depois de conferir
-       links, preços, notas e avaliações reais.
+       links, preços, estoque e envio reais.
     5. Não remova o aviso de afiliado nem o rel="sponsored".
     6. Publique somente esta pasta no Netlify Drop, GitHub Pages
        ou Vercel. Cada botão leva o visitante ao Mercado Livre.
     ============================================================
   -->
 
-  <script src="assets/produtos/manifest.js?v=c29d35b924" defer></script>
-  <script src="app.js?v=8aef2dbb93" defer></script>
+  <script src="assets/produtos/manifest.js?v=5ee86d543c" defer></script>
+  <script src="app.js?v=13c4bc4960" defer></script>
 </head>
 
 <body>
@@ -148,7 +148,7 @@
           <p class="profile-handle" id="profileHandle">Games &amp; Eletrônicos</p>
           <p class="profile-bio" id="profileBio">
             Controles, headsets, periféricos e acessórios para montar seu setup.
-            Analiso avaliações e mostro os contras antes de recomendar.
+            Analiso especificações e mostro os contras antes de recomendar.
           </p>
 
           <div class="profile-stats">
@@ -230,7 +230,6 @@
               <select id="sort">
                 <option value="destaques">Destaques</option>
                 <option value="menor-preco">Menor preço</option>
-                <option value="melhor-nota">Melhor avaliação</option>
               </select>
             </label>
           </div>
@@ -267,7 +266,7 @@
           <article class="trust-card">
             <span class="trust-num" aria-hidden="true">01</span>
             <h3>Eu analiso antes de listar</h3>
-            <p>Confiro especificações, compatibilidade, reputação do vendedor, avaliações e preço antes de colocar um produto aqui.</p>
+            <p>Confiro especificações, compatibilidade, reputação do vendedor, estoque e preço antes de colocar um produto aqui.</p>
           </article>
 
           <article class="trust-card">
@@ -285,7 +284,7 @@
 
         <div class="criteria" aria-label="Critérios de escolha">
           <span>Vendedor com reputação</span>
-          <span>Avaliações consistentes</span>
+          <span>Estoque conferido</span>
           <span>Preço conferido</span>
           <span>Contras incluídos</span>
           <span>Compra no Mercado Livre</span>
@@ -321,7 +320,7 @@
 
           <details>
             <summary>Você testou todos os produtos?</summary>
-            <p>Não. Quando não testei, deixo claro que a análise é baseada em avaliações e especificações. Nunca invento uma experiência que não tive.</p>
+            <p>Não. Quando não testei, deixo claro que a análise é baseada em especificações e no anúncio. Nunca invento uma experiência que não tive.</p>
           </details>
 
           <details>
