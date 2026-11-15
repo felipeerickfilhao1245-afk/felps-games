@@ -229,7 +229,7 @@ const PRODUTOS = [
      "Frequência de 60Hz",
      "Possui potência de 2.5 kW",
      "Tomada tipo 5 Tomadas 10A / 16A / 20A",
-     "Inclui as seguintes portas e conectores: 3 USB, 3 USB-C, Indução",
+     "Inclui as seguintes portas e conectores: 3 USB, 3 USB-C, Indução"
     ],
     atencao: " .",
     testado: false,
