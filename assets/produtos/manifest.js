@@ -20,6 +20,14 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/controle-sem-fio-para-pc-e-celular/05.webp?v=f3e33dd1a9",
     "assets/produtos/controle-sem-fio-para-pc-e-celular/06.webp?v=132f776403"
   ],
+  "extensao filtro linha turbo pd regua 5 tomadas usb c induca": [
+    "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/01.webp?v=b314cc2e66",
+    "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/02.webp?v=f5a552643f",
+    "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/03.webp?v=9ce70776c9",
+    "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/04.webp?v=a332533eac",
+    "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/05.webp?v=43a980c098",
+    "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/06.webp?v=5c5afb5717"
+  ],
   "headset gamer com microfone": [
     "assets/produtos/headset-gamer-com-microfone/01.webp?v=7b92712ed2",
     "assets/produtos/headset-gamer-com-microfone/02.webp?v=f4f661419b",

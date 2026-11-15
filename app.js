@@ -212,6 +212,24 @@ const PRODUTOS = [
     testado: false,
     destaque: null
   },
+   {
+    nome: "Extensão Filtro Linha Turbo Pd Régua 5 Tomadas Usb C Induçã",
+    nicho: "Eletrônicos",
+    emoji: "📡",
+    imagem: "",
+    link: "https://meli.la/1ZmLw38",
+    preco: "R$ 61,09",
+    nota: 4.8,
+    avaliacoes: 1400,
+    descricao: "Extensão Filtro de Linha Turbo PD Régua 20 com USB e USB-C (Cabo 2 m)Organize sua mesa e conecte vários aparelhos em um único ponto com mais praticidade no dia a dia. Ideal para casa, escritório e área de estudos, com alcance de 2 metros para posicionar onde for mais conveniente.",
+    publico: "Para quem quer uma tomada moderna",
+    pros: [
+      '5 tomadas e 2 pportas USB'
+    ],
+    atencao: " .",
+    testado: false,
+    destaque: null
+  },
 ];
 
 /* ============================================================
