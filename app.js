@@ -224,7 +224,12 @@ const PRODUTOS = [
     descricao: "Extensão Filtro de Linha Turbo PD Régua 20 com USB e USB-C (Cabo 2 m)Organize sua mesa e conecte vários aparelhos em um único ponto com mais praticidade no dia a dia. Ideal para casa, escritório e área de estudos, com alcance de 2 metros para posicionar onde for mais conveniente.",
     publico: "Para quem quer uma tomada moderna",
     pros: [
-      '5 tomadas e 2 pportas USB'
+      
+      "Voltagem: 127/220V",
+      "Frequência de 60Hz",
+      "Possui potência de 2.5 kW",
+      "Tomada tipo 5 Tomadas 10A / 16A / 20A",
+      "Inclui as seguintes portas e conectores: 3 USB, 3 USB-C, Indução."
     ],
     atencao: " .",
     testado: false,
