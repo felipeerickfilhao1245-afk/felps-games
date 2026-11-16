@@ -203,16 +203,16 @@ const PRODUTOS = [
     preco: "R$ 56,00",
     nota: 5,
     avaliacoes: 10,
-    estoque: true,
+    estoque: false,
     full: true,
-    descricao: "Para transferir arquivos e ler cartões de memória sem precisar de outro adaptador.",
-    publico: "quem precisa levar arquivos ou ler cartões Micro SD",
+    descricao: "Suporte gamer impresso em PLA de alta qualidade, com base temática inspirada em Grand Theft Auto/Rockstar. Acomoda o headset na parte de cima e dois controles (PS5, PS4 ou Xbox) nos apoios frontais, ajudando a organizar o setup.",
+    publico: "quem quer organizar o headset e os controles no setup gamer",
     pros: [
-      "Entrada USB 2.0",
-      "Leitor de cartão Micro SD",
-      "16 GB de capacidade"
+      "Impresso em PLA de alta qualidade",
+      "Compatível com PS5, PS4, Xbox e headsets gamer",
+      "Acabamento artesanal, feito sob encomenda"
     ],
-    atencao: "A velocidade varia conforme o cartão usado. Confira no anúncio o tipo de cartão aceito e o conector USB-A.",
+    atencao: "Produto feito sob encomenda, com acabamento artesanal: podem ocorrer pequenas variações de cor e acabamento. Confirme no anúncio o prazo de produção e a compatibilidade com o seu controle.",
     testado: false,
     destaque: null
   },
