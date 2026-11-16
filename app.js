@@ -203,7 +203,7 @@ const PRODUTOS = [
     preco: "R$ 56,00",
     nota: 5,
     avaliacoes: 10,
-    estoque: true,
+    estoque: false,
     full: true,
     descricao: "Suporte gamer impresso em PLA de alta qualidade, com base temática inspirada em Grand Theft Auto/Rockstar. Acomoda o headset na parte de cima e dois controles (PS5, PS4 ou Xbox) nos apoios frontais, ajudando a organizar o setup.",
     publico: "quem quer organizar o headset e os controles no setup gamer",
