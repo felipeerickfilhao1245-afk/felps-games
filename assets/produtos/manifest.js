@@ -28,6 +28,14 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/05.webp?v=43a980c098",
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/06.webp?v=5c5afb5717"
   ],
+  "grand theft auto vi playstation 5": [
+    "assets/produtos/grand-theft-auto-vi-playstation-5/01.webp?v=dd9d105f9a",
+    "assets/produtos/grand-theft-auto-vi-playstation-5/02.webp?v=0d8325589a",
+    "assets/produtos/grand-theft-auto-vi-playstation-5/03.webp?v=6ecb25a4fb",
+    "assets/produtos/grand-theft-auto-vi-playstation-5/04.webp?v=225a184867",
+    "assets/produtos/grand-theft-auto-vi-playstation-5/05.webp?v=15a446237a",
+    "assets/produtos/grand-theft-auto-vi-playstation-5/06.webp?v=19ee56a544"
+  ],
   "headset gamer com microfone": [
     "assets/produtos/headset-gamer-com-microfone/01.webp?v=7b92712ed2",
     "assets/produtos/headset-gamer-com-microfone/02.webp?v=f4f661419b",
@@ -39,25 +47,12 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/headset-gamer-com-microfone/08.webp?v=d5c2271c7a",
     "assets/produtos/headset-gamer-com-microfone/09.webp?v=847b4fcd1b"
   ],
-  "hub usb c tantsa 8 em 1 para notebook e macbook com hdmi 4k rj45 e usb 3 0": [
-    "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/01.webp?v=7ddb77efef",
-    "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/02.webp?v=ae66e7b587",
-    "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/03.webp?v=f11eed9ef5",
-    "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/04.webp?v=4e585291b2",
-    "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/05.webp?v=fc9ce59f2f",
-    "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/06.webp?v=0f0e85ca45",
-    "assets/produtos/hub-usb-c-tantsa-8-em-1-para-notebook-e-macbook-com-hdmi-4k-rj45-e-usb-3-0/07.webp?v=f300f5a32e"
-  ],
-  "kit 2 receptores vx10 com antena parabolica lnb duplo": [
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/01.webp?v=633bb57e72",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/02.webp?v=6ce4c980fb",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/03.webp?v=22a9cd1ba8",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/04.webp?v=75a48172e2",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/05.webp?v=2202ae55a9",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/06.webp?v=ef23db018a",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/07.webp?v=81a7a1a114",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/08.webp?v=8d88a68c45",
-    "assets/produtos/kit-2-receptores-vx10-com-antena-parabolica-lnb-duplo/09.webp?v=e57f88b703"
+  "jogo gta 5 ps5 grand theft auto v ps5 midia fisica": [
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/01.webp?v=e69610b325",
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/02.webp?v=3aef4d1f7e",
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/03.webp?v=f3c19c6d55",
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/04.webp?v=77498129ec",
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/05.webp?v=01860b4f52"
   ],
   "kit teclado e mouse gamer rgb usb com iluminacao led layout abnt2 bk g55": [
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/01.webp?v=c25c8a20f4",
@@ -74,10 +69,13 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/mouse-gamer-sem-fio/04.webp?v=b918f3a3e2",
     "assets/produtos/mouse-gamer-sem-fio/05.webp?v=64c2ff2f6c"
   ],
-  "suporte gamer controle ps5 ps4 xbox e headset gta rockstar": [
-    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/01.webp?v=bce02bca34",
-    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/02.webp?v=a80108b7d7",
-    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/03.webp?v=ddfeea8d2b",
-    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/04.webp?v=6e211803b5"
+  "suporte monitor preto pc gamer base informatica prateleira": [
+    "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/01.webp?v=98ee199d2a",
+    "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/02.webp?v=2d72df40ed",
+    "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/03.webp?v=fba5b97f8a",
+    "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/04.webp?v=721335309d",
+    "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/05.webp?v=db9c31555d",
+    "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/06.webp?v=012b13499f",
+    "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/07.webp?v=a6c99b2846"
   ]
 };
