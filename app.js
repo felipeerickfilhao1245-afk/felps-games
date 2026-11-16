@@ -104,7 +104,7 @@ const PRODUTOS = [
   {
     nome: "Grand Theft Auto VI - PlayStation 5",
     pasta: "grand-theft-auto-vi-playstation-5",
-    nicho: "Eletrônicos",
+    nicho: "Games",
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/2tig57c",
@@ -113,14 +113,14 @@ const PRODUTOS = [
     avaliacoes: 1763,
     estoque: true,
     full: true,
-    descricao: "Para conectar monitor, cartão de memória, HD e outros acessórios em notebook com poucas portas.",
-    publico: "quem usa notebook ou tablet com poucas conexões",
+    descricao: "Grand Theft Auto VI para PlayStation 5 em mídia física. A aventura se passa em Vice City, no estado de Leonida, e acompanha a história de Lucia e Jason em um mundo aberto da Rockstar.",
+    publico: "quem joga no PS5 e quer a versão física de GTA VI",
     pros: [
-      "Várias portas em um só adaptador",
-      "Compacto para levar na mochila",
-      "Útil para trabalho e estudo"
+      "Mídia física para PlayStation 5",
+      "Mundo aberto de Vice City e Leonida",
+      "História protagonizada por Lucia e Jason"
     ],
-    atencao: "Nem toda porta do hub passa vídeo, dados na velocidade máxima ou carga. Confira as especificações do modelo.",
+    atencao: "Jogo indicado para maiores de 18 anos. Confira no anúncio a região, o idioma e se o disco exige download ou conexão com a internet.",
     testado: false,
     destaque: 3
   },
@@ -205,21 +205,21 @@ const PRODUTOS = [
     avaliacoes: 351,
     estoque: true,
     full: true,
-    descricao: "Suporte gamer impresso em PLA de alta qualidade, com base temática inspirada em Grand Theft Auto/Rockstar. Acomoda o headset na parte de cima e dois controles (PS5, PS4 ou Xbox) nos apoios frontais, ajudando a organizar o setup.",
-    publico: "quem quer organizar o headset e os controles no setup gamer",
+    descricao: "Suporte de mesa para monitor em MDP de 15 mm, com 100 cm de largura e 15 cm de altura. Tem prateleira inferior para teclado, controles e acessórios e suporta até 35 kg.",
+    publico: "quem trabalha ou joga no PC e quer elevar o monitor e liberar espaço na mesa",
     pros: [
-      "Impresso em PLA de alta qualidade",
-      "Compatível com PS5, PS4, Xbox e headsets gamer",
-      "Acabamento artesanal, feito sob encomenda"
+      "Estrutura em MDP de 15 mm",
+      "Suporta até 35 kg e monitores de até 32 polegadas",
+      "Prateleira inferior para teclado e acessórios"
     ],
-    atencao: "Produto feito sob encomenda, com acabamento artesanal: podem ocorrer pequenas variações de cor e acabamento. Confirme no anúncio o prazo de produção e a compatibilidade com o seu controle.",
+    atencao: "A altura é fixa de 15 cm e a base tem 100 cm de largura: confira as medidas da sua mesa e do monitor antes de comprar.",
     testado: false,
     destaque: null
   },
   {
     nome: "Jogo Gta 5 Ps5 - Grand Theft Auto V Ps5 Mídia Física",
     pasta: "jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica",
-    nicho: "Eletrônicos",
+    nicho: "Games",
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/31uD98N",
@@ -228,14 +228,14 @@ const PRODUTOS = [
     avaliacoes: 13328,
     estoque: true,
     full: true,
-    descricao: "Kit completo para duas TVs, com dois receptores VX10, antena parabólica de 60 cm com LNB duplo, dois cabos de 15 m e mais de 90 canais sem mensalidade. Compatível com a Nova Parabólica SKY; canais pagos são opcionais. O anúncio informa garantia de 2 anos.",
-    publico: "quem quer equipar duas TVs com sinal de satélite sem mensalidade",
+    descricao: "Grand Theft Auto V para PlayStation 5 em mídia física. Inclui o modo história de Michael, Franklin e Trevor em Los Santos e o acesso ao GTA Online.",
+    publico: "quem quer jogar GTA V e GTA Online no PlayStation 5",
     pros: [
-      "Dois receptores para duas TVs",
-      "Mais de 90 canais sem mensalidade",
-      "Antena, LNB duplo e cabos inclusos"
+      "Modo história e GTA Online",
+      "Mídia física para PlayStation 5",
+      "Versão com visual aprimorado para o console"
     ],
-    atencao: "A instalação e a regulagem da antena podem exigir um técnico. A lista de canais, a cobertura e a compatibilidade variam por região; confira no anúncio se os canais pagos exigem assinatura à parte.",
+    atencao: "O GTA Online exige conexão com a internet e conta na Rockstar. Confira no anúncio a região e o idioma do disco antes de comprar.",
     testado: false,
     destaque: null
   },
