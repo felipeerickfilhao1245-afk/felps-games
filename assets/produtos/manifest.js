@@ -74,8 +74,10 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/mouse-gamer-sem-fio/04.webp?v=b918f3a3e2",
     "assets/produtos/mouse-gamer-sem-fio/05.webp?v=64c2ff2f6c"
   ],
-  "pen drive multilaser 2 em 1 16 gb": [
-    "assets/produtos/pen-drive-multilaser-2-em-1-16-gb/01.webp?v=e92daaeb3b",
-    "assets/produtos/pen-drive-multilaser-2-em-1-16-gb/02.webp?v=f1090445a0"
+  "suporte gamer controle ps5 ps4 xbox e headset gta rockstar": [
+    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/01.webp?v=bce02bca34",
+    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/02.webp?v=a80108b7d7",
+    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/03.webp?v=ddfeea8d2b",
+    "assets/produtos/suporte-gamer-controle-ps5-ps4-xbox-e-headset-gta-rockstar/04.webp?v=6e211803b5"
   ]
 };
