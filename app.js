@@ -441,10 +441,6 @@ function cardHtml(produto, destaque) {
         <span class="price-note">preço de referência</span>
       </div>
       <ul class="pros">${pros}</ul>
-      <div class="attention">
-        <strong>Ponto de atenção</strong>
-        ${escapeHtml(produto.atencao)}
-      </div>
       ${botaoHtml(produto)}
     </div>
   </article>`;
@@ -475,7 +471,7 @@ function produtosFiltrados() {
 
   let lista = PRODUTOS.filter((produto) => {
     const combinaCategoria = state.categoria === "Todos" || produto.nicho === state.categoria;
-    const texto = normalize([produto.nome, produto.nicho, produto.descricao, produto.publico, produto.atencao].join(" "));
+    const texto = normalize([produto.nome, produto.nicho, produto.descricao, produto.publico].join(" "));
     const combinaBusca = !termo || texto.includes(termo);
     return combinaCategoria && combinaBusca;
   });

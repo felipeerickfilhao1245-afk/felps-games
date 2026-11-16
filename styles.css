@@ -796,24 +796,6 @@ button, input, select { font: inherit; }
   line-height: 1.5;
 }
 
-.attention {
-  margin: auto 0 14px;
-  padding: 10px 12px;
-  border: 1px solid #f0dcb4;
-  border-radius: var(--radius-sm);
-  background: var(--warn-soft);
-  font-size: 0.76rem;
-  color: var(--warn);
-}
-
-.attention strong {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 0.68rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-
 .card .btn { margin-top: auto; }
 
 .affiliate-note {
