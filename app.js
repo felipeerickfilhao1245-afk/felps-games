@@ -392,6 +392,10 @@ function mediaHtml(produto) {
 }
 
 function botaoHtml(produto) {
+  if (produto.estoque === false) {
+    return `<p class="affiliate-note">Produto indisponível no momento. Sem link de compra.</p>`;
+  }
+
   if (isPlaceholder(produto.link)) {
     return `<span class="btn btn--dark btn--block btn--disabled" aria-disabled="true">Oferta em breve</span>
       <p class="affiliate-note">Este produto ainda não tem link de compra.</p>`;
