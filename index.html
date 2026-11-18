@@ -61,7 +61,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css?v=b36f0fc0ae" />
+  <link rel="stylesheet" href="styles.css?v=2e58a9137d" />
 
   <!--
     ============================================================
@@ -111,9 +111,15 @@
         <a href="#faq">FAQ</a>
       </nav>
 
-      <a class="btn btn--dark btn--sm" href="#recomendacoes">
-        Ver produtos <small>↓</small>
-      </a>
+      <div class="topbar-actions">
+        <span class="visit-counter" id="visitCounter" hidden title="Total de visitas ao site, sem cookies">
+          <span class="visit-counter-dot" aria-hidden="true"></span>
+          <strong id="visitCount">—</strong> <span id="visitLabel">visitas</span>
+        </span>
+        <a class="btn btn--dark btn--sm" href="#recomendacoes">
+          Ver produtos <small>↓</small>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -368,10 +374,6 @@
         <span>© <span id="year">2026</span> <span id="footerName">FELP'S GAMES</span>. Todos os direitos reservados.</span>
         <span>Emojis por <a href="https://github.com/jdecked/twemoji" target="_blank" rel="noopener noreferrer">Twemoji</a>, licença CC-BY 4.0.</span>
         <span>Feito com transparência.</span>
-        <span class="visit-counter" id="visitCounter" hidden title="Total de visitas ao site, sem cookies">
-          <span class="visit-counter-dot" aria-hidden="true"></span>
-          <strong id="visitCount">—</strong> <span id="visitLabel">visitas</span>
-        </span>
       </div>
     </div>
   </footer>
