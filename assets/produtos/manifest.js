@@ -31,7 +31,12 @@ window.IMAGENS_PRODUTOS = {
   "fone de ouvido gamer in ear vellon tws bluetooth 5 0": [
     "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/01.webp?v=be75c97266",
     "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/02.jpg?v=2e589d1c89",
-    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/03.jpg?v=5220848313"
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/03.jpg?v=5220848313",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/04.jpg?v=499aa785ec",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/05.jpg?v=aee45df7e6",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/06.jpg?v=a3a12fe16d",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/07.jpg?v=dc96d69766",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/08.jpg?v=fe7ab8016b"
   ],
   "grand theft auto vi playstation 5": [
     "assets/produtos/grand-theft-auto-vi-playstation-5/01.webp?v=dd9d105f9a",
