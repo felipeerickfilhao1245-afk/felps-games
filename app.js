@@ -263,6 +263,29 @@ const PRODUTOS = [
     testado: false,
     destaque: null
   },
+  {
+    nome: "Fone de Ouvido Gamer In-ear Vellon TWS Bluetooth 5.0, com Microfone e Estojo de Carregamento",
+    pasta: "fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0",
+    nicho: "Games",
+    emoji: "🎧",
+    imagem: "",
+    link: "https://meli.la/1G3E6yA",
+    preco: "R$ 38,90",
+    nota: 4.8,
+    avaliacoes: 1000,
+    estoque: true,
+    full: false,
+    descricao: "Para jogar, ouvir música e atender chamadas sem fio no celular, no PC ou no notebook. O estojo de carregamento guarda os fones e ajuda a levar o conjunto na mochila.",
+    publico: "quem quer um fone sem fio para jogar e ouvir música no dia a dia",
+    pros: [
+      "Bluetooth 5.0",
+      "Microfone integrado",
+      "Estojo de carregamento"
+    ],
+    atencao: "A autonomia e o alcance do Bluetooth variam com o uso. Confira no anúncio o tempo de bateria e se o estojo acompanha cabo de carregamento.",
+    testado: false,
+    destaque: null
+  },
 ];
 
 /* ============================================================

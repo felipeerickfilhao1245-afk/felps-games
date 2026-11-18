@@ -28,6 +28,11 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/05.webp?v=43a980c098",
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/06.webp?v=5c5afb5717"
   ],
+  "fone de ouvido gamer in ear vellon tws bluetooth 5 0": [
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/01.webp?v=be75c97266",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/02.jpg?v=2e589d1c89",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-vellon-tws-bluetooth-5-0/03.jpg?v=5220848313"
+  ],
   "grand theft auto vi playstation 5": [
     "assets/produtos/grand-theft-auto-vi-playstation-5/01.webp?v=dd9d105f9a",
     "assets/produtos/grand-theft-auto-vi-playstation-5/02.webp?v=0d8325589a",
