@@ -19,6 +19,8 @@
    5. Só mude "dadosConfirmados" para true depois de conferir
       links, preços, estoque e envio de todos os produtos.
    6. Não remova o aviso de afiliado nem o rel="sponsored".
+   7. "precoAnterior" e "desconto" são gerados pelo script de atualização
+      de preços para montar o selo de oferta. Não edite esses campos à mão.
    ============================================================ */
 
 const CONFIG = {
@@ -63,6 +65,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/1F7ujs2",
     preco: "R$ 54,90",
+    precoAnterior: "R$ 114,90",
+    desconto: 52,
     nota: 4.7,
     avaliacoes: 46898,
     estoque: true,
@@ -86,6 +90,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/2GgaBhX",
     preco: "R$ 94,09",
+    precoAnterior: "R$ 107,90",
+    desconto: 12,
     nota: 4.7,
     avaliacoes: 12110,
     estoque: true,
@@ -109,6 +115,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/2tig57c",
     preco: "R$ 417,57",
+    precoAnterior: "R$ 499,00",
+    desconto: 16,
     nota: 5,
     avaliacoes: 1763,
     estoque: true,
@@ -132,6 +140,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/13sUoZ8",
     preco: "R$ 56,79",
+    precoAnterior: "R$ 79,00",
+    desconto: 28,
     nota: 4.7,
     avaliacoes: 4515,
     estoque: true,
@@ -155,6 +165,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/1TTwFTw",
     preco: "R$ 21,90",
+    precoAnterior: "R$ 49,90",
+    desconto: 56,
     nota: 4.8,
     avaliacoes: 6294,
     estoque: true,
@@ -178,6 +190,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/1K3Wtax",
     preco: "R$ 541,10",
+    precoAnterior: "R$ 806,90",
+    desconto: 32,
     nota: 4.8,
     avaliacoes: 42546,
     estoque: true,
@@ -201,6 +215,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/2Sf2jqQ",
     preco: "R$ 73,00",
+    precoAnterior: "R$ 119,90",
+    desconto: 39,
     nota: 4.2,
     avaliacoes: 351,
     estoque: true,
@@ -224,6 +240,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/31uD98N",
     preco: "R$ 156,92",
+    precoAnterior: "R$ 209,90",
+    desconto: 25,
     nota: 4.8,
     avaliacoes: 13328,
     estoque: true,
@@ -271,6 +289,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/1G3E6yA",
     preco: "R$ 38,90",
+    precoAnterior: "R$ 78,90",
+    desconto: 50,
     nota: 4.8,
     avaliacoes: 1000,
     estoque: true,
@@ -444,6 +464,17 @@ function cardHtml(produto, destaque) {
 
   const temEstoque = produto.estoque !== false;
   const entregaFull = produto.full !== false;
+  const desconto = Number(produto.desconto);
+  const temDesconto =
+    typeof produto.precoAnterior === "string" &&
+    produto.precoAnterior.trim() !== "" &&
+    Number.isFinite(desconto) &&
+    desconto > 0 &&
+    desconto < 100;
+  const seloDesconto = temDesconto
+    ? `<span class="price-old" aria-label="Preço anterior: ${escapeHtml(produto.precoAnterior)}">${escapeHtml(produto.precoAnterior)}</span>
+        <span class="badge-off">${desconto}% OFF</span>`
+    : "";
 
   return `<article class="card${destaque ? " card--featured" : ""}">
     <div class="card-media">
@@ -461,6 +492,7 @@ function cardHtml(produto, destaque) {
       </div>
       <div class="price-row">
         <span class="price">${escapeHtml(produto.preco)}</span>
+        ${seloDesconto}
         <span class="price-note">preço de referência</span>
       </div>
       <ul class="pros">${pros}</ul>

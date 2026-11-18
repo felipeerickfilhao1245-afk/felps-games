@@ -766,6 +766,27 @@ button, input, select { font: inherit; }
   letter-spacing: -0.03em;
 }
 
+.price-old {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.badge-off {
+  align-self: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--green);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
 .price-note {
   font-size: 0.7rem;
   color: var(--muted);
