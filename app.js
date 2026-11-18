@@ -639,6 +639,33 @@ function bindControls() {
   });
 }
 
+async function initContadorVisitas() {
+  const caixa = document.getElementById("visitCounter");
+  const alvo = document.getElementById("visitCount");
+  if (!caixa || !alvo) return;
+
+  // Conta somente no dominio oficial; previsoes locais e o github.io ficam de fora.
+  const hostsOficiais = new Set(["felpsgames.com.br", "www.felpsgames.com.br"]);
+  if (!hostsOficiais.has(window.location.hostname)) return;
+
+  const url = "https://abacus.jasoncameron.dev/hit/felpsgames.com.br/visitas";
+  try {
+    const resposta = await fetch(url, {
+      cache: "no-store",
+      headers: { Accept: "application/json" }
+    });
+    if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
+    const dados = await resposta.json();
+    const total = Number(dados && dados.value);
+    if (!Number.isFinite(total) || total < 0) throw new Error("valor invalido");
+
+    alvo.textContent = new Intl.NumberFormat("pt-BR").format(total);
+    caixa.hidden = false;
+  } catch {
+    // Se o contador estiver indisponivel, o rodape continua funcionando normalmente.
+  }
+}
+
 function init() {
   bindProfile();
   bindGalerias();
@@ -647,6 +674,7 @@ function init() {
   bindControls();
   renderGrid();
   showStatusBanner();
+  initContadorVisitas();
 }
 
 document.addEventListener("DOMContentLoaded", init);

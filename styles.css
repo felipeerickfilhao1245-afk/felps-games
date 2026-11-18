@@ -1155,6 +1155,25 @@ footer {
   text-underline-offset: 2px;
 }
 
+.visit-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.visit-counter[hidden] { display: none; }
+
+.visit-counter strong { color: var(--ink-soft); }
+
+.visit-counter-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 3px var(--green-soft);
+}
+
 /* ---------- Modo de edição (só em file://) ---------- */
 
 .edit-banner {
