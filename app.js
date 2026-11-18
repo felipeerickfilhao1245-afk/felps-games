@@ -642,7 +642,8 @@ function bindControls() {
 async function initContadorVisitas() {
   const caixa = document.getElementById("visitCounter");
   const alvo = document.getElementById("visitCount");
-  if (!caixa || !alvo) return;
+  const rotulo = document.getElementById("visitLabel");
+  if (!caixa || !alvo || !rotulo) return;
 
   // Conta somente no dominio oficial; previsoes locais e o github.io ficam de fora.
   const hostsOficiais = new Set(["felpsgames.com.br", "www.felpsgames.com.br"]);
@@ -660,6 +661,7 @@ async function initContadorVisitas() {
     if (!Number.isFinite(total) || total < 0) throw new Error("valor invalido");
 
     alvo.textContent = new Intl.NumberFormat("pt-BR").format(total);
+    rotulo.textContent = total === 1 ? "visita" : "visitas";
     caixa.hidden = false;
   } catch {
     // Se o contador estiver indisponivel, o rodape continua funcionando normalmente.
