@@ -446,8 +446,8 @@ function botaoHtml(produto) {
 
   // Abre na mesma aba em todos os navegadores: Brave, Instagram, Facebook
   // e TikTok podem bloquear a abertura de novas abas/popups.
-  return `<a class="btn btn--dark btn--block" href="${escapeHtml(produto.link)}" rel="sponsored noopener noreferrer" aria-label="Comprar ${escapeHtml(produto.nome)} no Mercado Livre">
-      Comprar no Mercado Livre <small>↗</small>
+  return `<a class="btn btn--dark btn--block" href="${escapeHtml(produto.link)}" rel="sponsored noopener noreferrer">
+      Comprar no Mercado Livre <span class="sr-only"> — ${escapeHtml(produto.nome)}</span> <small aria-hidden="true">↗</small>
     </a>
     <p class="affiliate-note">Você será direcionado ao Mercado Livre · link de afiliado${produto.testado ? " · produto testado por mim" : " · análise por especificações"}</p>`;
 }
@@ -472,7 +472,7 @@ function cardHtml(produto, destaque) {
     desconto > 0 &&
     desconto < 100;
   const seloDesconto = temDesconto
-    ? `<span class="price-old" aria-label="Preço anterior: ${escapeHtml(produto.precoAnterior)}">${escapeHtml(produto.precoAnterior)}</span>
+    ? `<span class="price-old"><span class="sr-only">Preço anterior: </span>${escapeHtml(produto.precoAnterior)}</span>
         <span class="badge-off">${desconto}% OFF</span>`
     : "";
 
