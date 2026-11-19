@@ -315,6 +315,10 @@ const PRODUTOS = [
 /* Até 9 produtos podem aparecer em "Destaques da vitrine". */
 const MAX_DESTAQUES = 9;
 
+/* Contador de cliques: mesmo serviço do contador de visitas, sem cookies. */
+const ABACUS = "https://abacus.jasoncameron.dev";
+const HOSTS_OFICIAIS = new Set(["felpsgames.com.br", "www.felpsgames.com.br"]);
+
 const state = {
   busca: "",
   categoria: "Todos",
@@ -355,6 +359,38 @@ function chaveImagem(value) {
 function chaveProduto(produto) {
   // "pasta" é estável; o nome pode mudar sem perder a galeria.
   return chaveImagem(produto.pasta || produto.nome);
+}
+
+function hashChave(texto) {
+  // FNV-1a de 32 bits: chave curta e estável para o contador do Abacus.
+  let hash = 2166136261;
+  const valor = String(texto || "");
+  for (let i = 0; i < valor.length; i += 1) {
+    hash ^= valor.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(36);
+}
+
+function registrarClique(hashProduto, origem) {
+  if (!HOSTS_OFICIAIS.has(window.location.hostname) || !hashProduto) return;
+
+  const sufixo = origem === "destaque" ? "d" : "l";
+  const chave = `clique-${hashProduto}-${sufixo}`;
+  const url = `${ABACUS}/hit/${encodeURIComponent("felpsgames.com.br")}/${chave}`;
+
+  try {
+    // keepalive permite concluir o registro mesmo com a navegação para o Mercado Livre.
+    fetch(url, {
+      method: "GET",
+      mode: "no-cors",
+      cache: "no-store",
+      credentials: "omit",
+      keepalive: true
+    }).catch(() => {});
+  } catch {
+    // Se o contador estiver indisponível, a compra continua normalmente.
+  }
 }
 
 function precoNumero(preco) {
@@ -434,7 +470,39 @@ function mediaHtml(produto) {
     <div class="media-thumbs" role="group" aria-label="Fotos de ${escapeHtml(produto.nome)}">${miniaturas}</div>`;
 }
 
-function botaoHtml(produto) {
+function notaHtml(produto) {
+  const nota = Number(produto.nota);
+  const avaliacoes = Number(produto.avaliacoes);
+  if (!Number.isFinite(nota) || nota <= 0 || !Number.isFinite(avaliacoes) || avaliacoes <= 0) {
+    return "";
+  }
+
+  const notaTexto = nota.toLocaleString("pt-BR", {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1
+  });
+  const avaliacoesTexto = new Intl.NumberFormat("pt-BR").format(avaliacoes);
+  const rotuloAvaliacoes = avaliacoes === 1 ? "avaliação" : "avaliações";
+
+  return `<p class="rating">
+      <span class="sr-only">Nota do anúncio no Mercado Livre: </span>
+      <span class="rating-star" aria-hidden="true">★</span>
+      <strong>${notaTexto}</strong>
+      <span class="rating-context">· ${avaliacoesTexto} ${rotuloAvaliacoes} no anúncio</span>
+    </p>`;
+}
+
+function atencaoHtml(produto) {
+  const texto = String(produto.atencao || "").trim();
+  if (!texto) return "";
+
+  return `<details class="caveat">
+      <summary>Ponto de atenção<span class="sr-only"> sobre ${escapeHtml(produto.nome)}</span></summary>
+      <p>${escapeHtml(texto)}</p>
+    </details>`;
+}
+
+function botaoHtml(produto, origem) {
   if (produto.estoque === false) {
     return `<p class="affiliate-note">Produto indisponível no momento. Sem link de compra.</p>`;
   }
@@ -446,7 +514,8 @@ function botaoHtml(produto) {
 
   // Abre na mesma aba em todos os navegadores: Brave, Instagram, Facebook
   // e TikTok podem bloquear a abertura de novas abas/popups.
-  return `<a class="btn btn--dark btn--block" href="${escapeHtml(produto.link)}" rel="sponsored noopener noreferrer">
+  const hashProduto = hashChave(chaveProduto(produto));
+  return `<a class="btn btn--dark btn--block" href="${escapeHtml(produto.link)}" rel="sponsored noopener noreferrer" data-afiliado="true" data-clique="${hashProduto}" data-origem="${origem}">
       Comprar no Mercado Livre <span class="sr-only"> — ${escapeHtml(produto.nome)}</span> <small aria-hidden="true">↗</small>
     </a>
     <p class="affiliate-note">Você será direcionado ao Mercado Livre · link de afiliado${produto.testado ? " · produto testado por mim" : " · análise por especificações"}</p>`;
@@ -484,6 +553,7 @@ function cardHtml(produto, destaque) {
     <div class="card-body">
       <span class="tag">${escapeHtml(produto.nicho || "Recomendação")}</span>
       <h3>${escapeHtml(produto.nome)}</h3>
+      ${notaHtml(produto)}
       <p class="desc">${escapeHtml(produto.descricao)}</p>
       <p class="ideal"><strong>Ideal para:</strong> ${escapeHtml(produto.publico)}</p>
       <div class="meta-row">
@@ -496,7 +566,8 @@ function cardHtml(produto, destaque) {
         <span class="price-note">preço de referência</span>
       </div>
       <ul class="pros">${pros}</ul>
-      ${botaoHtml(produto)}
+      ${atencaoHtml(produto)}
+      ${botaoHtml(produto, destaque ? "destaque" : "lista")}
     </div>
   </article>`;
 }
@@ -604,6 +675,21 @@ function bindGalerias() {
   });
 }
 
+function bindCliquesAfiliado() {
+  const registrar = (event) => {
+    const link = event.target && event.target.closest
+      ? event.target.closest("a[data-afiliado]")
+      : null;
+    if (!link || !link.dataset.clique) return;
+    registrarClique(link.dataset.clique, link.dataset.origem);
+  };
+
+  document.addEventListener("click", registrar);
+  document.addEventListener("auxclick", (event) => {
+    if (event.button === 1) registrar(event);
+  });
+}
+
 function bindControls() {
   $("search").addEventListener("input", (event) => {
     state.busca = event.target.value;
@@ -646,10 +732,9 @@ async function initContadorVisitas() {
   if (!caixa || !alvo || !rotulo) return;
 
   // Conta somente no dominio oficial; previsoes locais e o github.io ficam de fora.
-  const hostsOficiais = new Set(["felpsgames.com.br", "www.felpsgames.com.br"]);
-  if (!hostsOficiais.has(window.location.hostname)) return;
+  if (!HOSTS_OFICIAIS.has(window.location.hostname)) return;
 
-  const url = "https://abacus.jasoncameron.dev/hit/felpsgames.com.br/visitas";
+  const url = `${ABACUS}/hit/felpsgames.com.br/visitas`;
   try {
     const resposta = await fetch(url, {
       cache: "no-store",
@@ -671,6 +756,7 @@ async function initContadorVisitas() {
 function init() {
   bindProfile();
   bindGalerias();
+  bindCliquesAfiliado();
   renderTop();
   renderChips();
   bindControls();

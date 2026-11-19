@@ -710,6 +710,30 @@ button, input, select { font: inherit; }
   letter-spacing: -0.02em;
 }
 
+.rating {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: -2px 0 10px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.rating-star {
+  color: #b07d00;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.rating strong {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.rating-context { color: var(--muted); }
+
 .card .desc {
   margin: 0 0 10px;
   font-size: 0.86rem;
@@ -822,6 +846,47 @@ button, input, select { font: inherit; }
   font-weight: 900;
   font-size: 0.78rem;
   line-height: 1.5;
+}
+
+.caveat {
+  margin: 0 0 14px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line-strong);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.caveat summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  color: var(--warn);
+  font-weight: 800;
+  list-style: none;
+}
+
+.caveat summary::-webkit-details-marker { display: none; }
+
+.caveat summary::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--warn);
+}
+
+.caveat summary:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.caveat p {
+  margin: 8px 0 0;
+  color: var(--muted);
 }
 
 .card .btn { margin-top: auto; }
