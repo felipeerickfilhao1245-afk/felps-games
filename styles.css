@@ -1228,16 +1228,26 @@ footer {
 }
 
 .visit-counter {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  right: max(14px, env(safe-area-inset-right));
+  bottom: max(14px, env(safe-area-inset-bottom));
+  z-index: 60;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 10px;
+  padding: 7px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 253, 248, 0.75);
+  background: rgba(255, 253, 248, 0.92);
+  box-shadow: 0 8px 24px rgba(30, 27, 22, 0.14);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   font-size: 0.76rem;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
+  pointer-events: none;
 }
 
 .visit-counter[hidden] { display: none; }
@@ -1290,6 +1300,12 @@ footer {
 @media (max-width: 480px) {
   .topbar-actions { gap: 10px; }
   .topbar-actions .btn { display: none; }
+  .visit-counter {
+    right: 12px;
+    bottom: 12px;
+    padding: 6px 10px;
+    font-size: 0.72rem;
+  }
 }
 
 @media (max-width: 620px) {

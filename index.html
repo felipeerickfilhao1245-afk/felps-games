@@ -61,7 +61,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css?v=87cbb40d62" />
+  <link rel="stylesheet" href="styles.css?v=b21fa966f9" />
 
   <!--
     ============================================================
@@ -85,7 +85,7 @@
   -->
 
   <script src="assets/produtos/manifest.js?v=5b2f0eca88" defer></script>
-  <script src="app.js?v=b77a270f4a" defer></script>
+  <script src="app.js?v=0c863e911e" defer></script>
 </head>
 
 <body>
@@ -112,10 +112,6 @@
       </nav>
 
       <div class="topbar-actions">
-        <span class="visit-counter" id="visitCounter" hidden title="Total de visitas ao site, sem cookies">
-          <span class="visit-counter-dot" aria-hidden="true"></span>
-          <strong id="visitCount">—</strong> <span id="visitLabel">visitas</span>
-        </span>
         <a class="btn btn--dark btn--sm" href="#recomendacoes">
           Ver produtos <small>↓</small>
         </a>
@@ -383,5 +379,10 @@
       <p class="edit-banner is-visible">Ative o JavaScript para ver a vitrine e usar a busca.</p>
     </div>
   </noscript>
+
+  <div class="visit-counter" id="visitCounter" role="status" aria-live="polite" aria-label="Total de visitas ao site, sem cookies" title="Total de visitas ao site, sem cookies">
+    <span class="visit-counter-dot" aria-hidden="true"></span>
+    <strong id="visitCount">—</strong> <span id="visitLabel">visitas</span>
+  </div>
 </body>
 </html>
