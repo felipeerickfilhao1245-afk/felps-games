@@ -1248,6 +1248,7 @@ footer {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
   pointer-events: none;
+  transition: opacity 0.2s ease;
 }
 
 .visit-counter[hidden] { display: none; }
@@ -1277,6 +1278,267 @@ footer {
 
 .edit-banner.is-visible { display: block; }
 .edit-banner code { background: rgba(255, 255, 255, 0.6); padding: 1px 5px; border-radius: 4px; }
+
+/* ---------- Páginas institucionais ---------- */
+
+.legal-page { padding: 48px 0 10px; }
+
+.legal-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  max-width: 780px;
+  margin: 0 auto 26px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.legal-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.legal-nav a:hover { border-bottom-color: var(--ink); }
+.legal-nav a[aria-current="page"] { border-bottom-color: var(--accent-deep); }
+
+.legal-hero {
+  max-width: 780px;
+  margin: 0 auto 26px;
+}
+
+.legal-hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4.4vw, 3.15rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.legal-hero > p:not(.eyebrow):not(.legal-updated) {
+  max-width: 68ch;
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.legal-hero > p.legal-updated {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 8px 0 0;
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.legal-updated::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 3px var(--green-soft);
+}
+
+.legal-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 30px 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.legal-content h2 {
+  margin: 30px 0 8px;
+  font-size: 1.28rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.legal-content h2:first-child { margin-top: 0; }
+
+.legal-content h3 {
+  margin: 20px 0 6px;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+}
+
+.legal-content p { margin: 0 0 12px; }
+
+.legal-content ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.legal-content li { margin: 6px 0; }
+
+.legal-content a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-content a.btn {
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.legal-content a.btn--dark { color: #fff; }
+
+.legal-content code {
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--surface-2);
+  font-size: 0.88em;
+}
+
+.legal-card {
+  margin: 0 0 22px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.legal-card h2 { margin-top: 0; }
+.legal-card .btn { max-width: 100%; margin: 4px 0 10px; word-break: break-word; }
+
+.legal-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* ---------- Banner de cookies ---------- */
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.97);
+  box-shadow: 0 -18px 40px -24px rgba(23, 24, 28, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transform: translateY(110%);
+  transition: transform 0.26s ease;
+}
+
+.cookie-banner.is-visible { transform: translateY(0); }
+.cookie-banner[hidden] { display: none; }
+
+.cookie-banner-inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.cookie-copy { min-width: 0; }
+
+.cookie-copy h2 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.cookie-copy p {
+  margin: 0;
+  max-width: 76ch;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.cookie-copy a {
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.cookie-actions .btn {
+  min-height: 40px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+}
+
+.cookie-close {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cookie-close:hover { background: var(--surface-2); color: var(--ink); }
+.cookie-banner:not(.is-reopened) .cookie-close { display: none; }
+
+body.cookie-open .visit-counter { opacity: 0; }
+
+/* ---------- Espaços de anúncio ---------- */
+
+.ad-section { margin: 30px auto 0; }
+.ad-section[hidden] { display: none; }
+
+.ad-label {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ad-slot {
+  display: grid;
+  place-items: center;
+  min-height: 90px;
+  overflow: hidden;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  background: rgba(255, 253, 248, 0.55);
+}
+
+.ad-slot[hidden] { display: none; }
+.ad-slot .adsbygoogle { width: 100%; }
 
 /* ---------- Responsivo ---------- */
 
@@ -1316,6 +1578,19 @@ footer {
   .sort select { flex: 1; }
   .cta-band { padding: 30px 22px; }
   .cta-band .btn { width: 100%; }
+
+  .legal-page { padding-top: 32px; }
+  .legal-content { padding: 22px 18px; }
+  .legal-hero h1 { font-size: clamp(1.85rem, 9vw, 2.6rem); }
+  .legal-card .btn { width: 100%; }
+
+  .cookie-banner { padding: 14px; }
+  .cookie-banner-inner { display: block; }
+  .cookie-actions { margin-top: 12px; }
+  .cookie-actions .btn { flex: 1 1 140px; }
+  .cookie-close { margin-left: auto; }
+
+  .ad-section { margin-top: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

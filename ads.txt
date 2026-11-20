@@ -1,0 +1,7 @@
+# ads.txt do FELP'S GAMES
+# Gerado automaticamente por automacao/configurar-site.js.
+# Nao edite este arquivo: altere dados/config-site.json.
+
+# O ID do Google AdSense ainda nao foi configurado.
+# Preencha "adsense.publisherId" em dados/config-site.json e rode:
+#   node automacao/configurar-site.js
