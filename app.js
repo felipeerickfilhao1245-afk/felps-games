@@ -29,7 +29,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg?v=e62508aea4",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso especificações antes de recomendar.",
-  atualizado: "2026-11-19",
+  atualizado: "2026-11-20",
   dadosConfirmados: true
 };
 
@@ -299,6 +299,50 @@ const PRODUTOS = [
       "Estojo de carregamento"
     ],
     atencao: "A autonomia e o alcance do Bluetooth variam com o uso. Confira no anúncio o tempo de bateria e se o estojo acompanha cabo de carregamento.",
+    testado: false,
+    destaque: null
+  },
+  {
+    nome: "Controle Microsoft Wireless Carbon Black para Xbox Series X|S e PC",
+    pasta: "Controle-Microsoft-Wireless-Carbon Black-para-Xbox-Series-XS-e-PC",
+    nicho: "Games",
+    emoji: "🎮",
+    imagem: "",
+    link: "https://meli.la/2eNZ7RC",
+    preco: "R$ 340,39",
+    precoAnterior: "R$ 499,00",
+    desconto: 31,
+    estoque: true,
+    full: false,
+    descricao: "Controle sem fio Microsoft para Xbox Series X|S e PC, com conexão Bluetooth e USB-C. O formato ergonômico e os botões conhecidos dos controles Xbox funcionam no console e no computador.",
+    publico: "quem joga no Xbox Series X|S ou no PC",
+    pros: [
+      "Modelo Microsoft Wireless",
+      "Conexão Bluetooth e USB-C",
+      "Compatível com Xbox Series X|S e PC"
+    ],
+    atencao: "Confira no anúncio se o produto é original, se acompanha pilhas e cabo USB-C e se o vendedor é loja oficial. No PC, computadores sem Bluetooth precisam de um adaptador.",
+    testado: false,
+    destaque: null
+  },
+  {
+    nome: "PlayStation 5 Slim Disk 1 TB com 1 Controle Branco Sony",
+    pasta: "Playstation-5-Slim-Disk-1-tb-1- Controle-Branco-Sony",
+    nicho: "Games",
+    emoji: "🎮",
+    imagem: "",
+    link: "https://meli.la/2HonhMv",
+    preco: "R$ 5.049,00",
+    estoque: true,
+    full: false,
+    descricao: "Console PlayStation 5 Slim com leitor de disco, SSD de 1 TB e um controle DualSense branco. Uma opção para jogar os lançamentos do PS5 em mídia física e digital.",
+    publico: "quem quer entrar na geração PS5 com leitor de disco",
+    pros: [
+      "Leitor de disco integrado",
+      "SSD de 1 TB",
+      "Acompanha um controle DualSense"
+    ],
+    atencao: "Confira no anúncio a garantia, a região do console e se o modelo é mesmo o Slim com leitor de disco. Os jogos são vendidos separadamente.",
     testado: false,
     destaque: null
   },
