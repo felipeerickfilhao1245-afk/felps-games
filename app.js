@@ -64,9 +64,9 @@ const PRODUTOS = [
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/1F7ujs2",
-    preco: "R$ 54,90",
+    preco: "R$ 52,15",
     precoAnterior: "R$ 114,90",
-    desconto: 52,
+    desconto: 54,
     nota: 4.7,
     avaliacoes: 46898,
     estoque: true,
@@ -581,13 +581,22 @@ function renderTop() {
   $("podiumGrid").innerHTML = top.map((produto) => cardHtml(produto, true)).join("");
 }
 
+// Cores dos chips de categoria: vermelho=promocoes, amarelo=ofertas,
+// verde=games, azul=eletronico. As classes estao em styles.css.
+const CORES_CATEGORIA = {
+  Todos: "chip-vermelho",
+  Games: "chip-verde",
+  "Eletrônicos": "chip-azul"
+};
+
 function renderChips() {
   const categorias = ["Todos", ...new Set(PRODUTOS.map((p) => p.nicho).filter(Boolean))];
 
   $("chips").innerHTML = categorias
     .map((categoria) => {
       const emoji = emojiHtml(EMOJIS_CATEGORIA[categoria] || EMOJI_PADRAO, "chip-emoji");
-      return `<button class="chip" type="button" data-categoria="${escapeHtml(categoria)}" aria-pressed="${categoria === state.categoria}">${emoji}<span>${escapeHtml(categoria)}</span></button>`;
+      const cor = CORES_CATEGORIA[categoria] || "";
+      return `<button class="chip ${cor}" type="button" data-categoria="${escapeHtml(categoria)}" aria-pressed="${categoria === state.categoria}">${emoji}<span>${escapeHtml(categoria)}</span></button>`;
     })
     .join("");
 }

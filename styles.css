@@ -1309,3 +1309,52 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+/* Cores para chips de categoria: vermelho=promocoes, amarelo=ofertas,
+   verde=games, azul=eletronico. O amarelo esta definido mas nao e usado. */
+:root {
+  --cor-vermelho: #e74c3c;
+  --cor-amarelo: #f1c40f;
+  --cor-verde: #2ecc71;
+  --cor-azul: #3498db;
+}
+
+.chip-vermelho {
+  border-color: var(--cor-vermelho);
+  color: var(--cor-vermelho);
+}
+
+.chip-amarelo {
+  border-color: var(--cor-amarelo);
+  color: var(--cor-amarelo);
+}
+
+.chip-verde {
+  border-color: var(--cor-verde);
+  color: var(--cor-verde);
+}
+
+.chip-azul {
+  border-color: var(--cor-azul);
+  color: var(--cor-azul);
+}
+
+.chip-vermelho:hover {
+  background: var(--cor-vermelho);
+  color: #fff;
+}
+
+.chip-amarelo:hover {
+  background: var(--cor-amarelo);
+  color: #000;
+}
+
+.chip-verde:hover {
+  background: var(--cor-verde);
+  color: #fff;
+}
+
+.chip-azul:hover {
+  background: var(--cor-azul);
+  color: #fff;
+}
