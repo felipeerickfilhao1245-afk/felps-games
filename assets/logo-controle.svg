@@ -4,10 +4,10 @@
   <path d="M46 38h36c13 0 23 9 26 21l8 30c2 9-4 16-13 16-5 0-9-2-12-6L82 87H46l-9 12c-3 4-7 6-12 6-9 0-15-7-13-16l8-30c3-12 13-21 26-21Z" fill="#141519"/>
   <rect x="40.5" y="51" width="8" height="23" rx="2.5" fill="#f6f4ee"/>
   <rect x="33" y="58.5" width="23" height="8" rx="2.5" fill="#f6f4ee"/>
-  <circle cx="87" cy="53.5" r="4.6" fill="#ffd93d"/>
-  <circle cx="95.5" cy="61.5" r="4.6" fill="#f6f4ee"/>
-  <circle cx="87" cy="69.5" r="4.6" fill="#ffd93d"/>
-  <circle cx="79" cy="61.5" r="4.6" fill="#f6f4ee"/>
+  <circle cx="87" cy="53.5" r="4.6" fill="#e74c3c"/>
+  <circle cx="95.5" cy="61.5" r="4.6" fill="#f1c40f"/>
+  <circle cx="87" cy="69.5" r="4.6" fill="#2ecc71"/>
+  <circle cx="79" cy="61.5" r="4.6" fill="#3498db"/>
   <circle cx="51" cy="81" r="7.4" fill="#f6f4ee"/>
   <circle cx="51" cy="81" r="3.4" fill="#141519"/>
   <circle cx="77" cy="81" r="7.4" fill="#f6f4ee"/>
