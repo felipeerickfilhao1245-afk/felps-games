@@ -12,11 +12,11 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/caixa-de-som-bluetooth-portatil/05.webp?v=da494cbeb5",
     "assets/produtos/caixa-de-som-bluetooth-portatil/06.webp?v=0ad90687b8"
   ],
-  "controle microsoft wireless carbon black para xbox series xs e pc": [
-    "assets/produtos/Controle-Microsoft-Wireless-Carbon Black-para-Xbox-Series-XS-e-PC/01.webp?v=9584b2d4e2",
-    "assets/produtos/Controle-Microsoft-Wireless-Carbon Black-para-Xbox-Series-XS-e-PC/02.webp?v=e532d21939",
-    "assets/produtos/Controle-Microsoft-Wireless-Carbon Black-para-Xbox-Series-XS-e-PC/03.webp?v=4281c879cb",
-    "assets/produtos/Controle-Microsoft-Wireless-Carbon Black-para-Xbox-Series-XS-e-PC/04.webp?v=cbd2499721"
+  "controle microsoft wireless carbon black para xbox series x s e pc": [
+    "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/01.webp?v=9584b2d4e2",
+    "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/02.webp?v=e532d21939",
+    "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/03.webp?v=4281c879cb",
+    "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/04.webp?v=cbd2499721"
   ],
   "controle sem fio para pc e celular": [
     "assets/produtos/controle-sem-fio-para-pc-e-celular/01.webp?v=aca4265e53",
@@ -85,9 +85,9 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/mouse-gamer-sem-fio/04.webp?v=b918f3a3e2",
     "assets/produtos/mouse-gamer-sem-fio/05.webp?v=64c2ff2f6c"
   ],
-  "playstation 5 slim disk 1 tb 1 controle branco sony": [
-    "assets/produtos/Playstation-5-Slim-Disk-1-tb-1- Controle-Branco-Sony/01.webp?v=98f6ba6d33",
-    "assets/produtos/Playstation-5-Slim-Disk-1-tb-1- Controle-Branco-Sony/02.webp?v=4772d16566"
+  "playstation 5 slim disk 1 tb com 1 controle branco sony": [
+    "assets/produtos/playstation-5-slim-disk-1-tb-com-1-controle-branco-sony/01.webp?v=4772d16566",
+    "assets/produtos/playstation-5-slim-disk-1-tb-com-1-controle-branco-sony/02.webp?v=98f6ba6d33"
   ],
   "suporte monitor preto pc gamer base informatica prateleira": [
     "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/01.webp?v=98ee199d2a",

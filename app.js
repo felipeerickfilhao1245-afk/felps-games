@@ -304,7 +304,7 @@ const PRODUTOS = [
   },
   {
     nome: "Controle Microsoft Wireless Carbon Black para Xbox Series X|S e PC",
-    pasta: "Controle-Microsoft-Wireless-Carbon Black-para-Xbox-Series-XS-e-PC",
+    pasta: "controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc",
     nicho: "Games",
     emoji: "🎮",
     imagem: "",
@@ -327,7 +327,7 @@ const PRODUTOS = [
   },
   {
     nome: "PlayStation 5 Slim Disk 1 TB com 1 Controle Branco Sony",
-    pasta: "Playstation-5-Slim-Disk-1-tb-1- Controle-Branco-Sony",
+    pasta: "playstation-5-slim-disk-1-tb-com-1-controle-branco-sony",
     nicho: "Games",
     emoji: "🎮",
     imagem: "",
