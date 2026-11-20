@@ -7,7 +7,7 @@
   <meta name="description" content="Vitrine independente de games e eletrônicos: controles, headsets, teclados, hubs e acessórios. Prós e links de afiliado do Mercado Livre." />
   <link rel="canonical" href="https://felpsgames.com.br/" />
   <meta name="google-site-verification" content="eeQdjutNjJ3lwtu9_oy9br5bYPdL4W5iSDOdK4V8MIQ" />
-<meta name="theme-color" content="#f6f4ee" />
+  <meta name="theme-color" content="#f6f4ee" />
   <meta name="color-scheme" content="light" />
   <link rel="icon" type="image/svg+xml" href="assets/logo-controle.svg?v=e62508aea4" />
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icone-192.png?v=e62508aea4" />
@@ -61,7 +61,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css?v=5c48a8cd66" />
+  <link rel="stylesheet" href="styles.css?v=87cbb40d62" />
 
   <!--
     ============================================================
@@ -85,10 +85,7 @@
   -->
 
   <script src="assets/produtos/manifest.js?v=5b2f0eca88" defer></script>
-  <script src="app.js?v=2cb0251c33" defer></script>
-  <script src="consent.js?v=b2d10f8823" defer></script>
-  <script src="ads-config.js?v=9629a9efd2" defer></script>
-  <script src="ads.js?v=2b8f6bd204" defer></script>
+  <script src="app.js?v=b77a270f4a" defer></script>
 </head>
 
 <body>
@@ -115,6 +112,10 @@
       </nav>
 
       <div class="topbar-actions">
+        <span class="visit-counter" id="visitCounter" hidden title="Total de visitas ao site, sem cookies">
+          <span class="visit-counter-dot" aria-hidden="true"></span>
+          <strong id="visitCount">—</strong> <span id="visitLabel">visitas</span>
+        </span>
         <a class="btn btn--dark btn--sm" href="#recomendacoes">
           Ver produtos <small>↓</small>
         </a>
@@ -210,12 +211,6 @@
       </div>
     </section>
 
-    <!-- ================= PUBLICIDADE ================= -->
-    <section class="ad-section wrap" data-ad-section hidden aria-label="Publicidade">
-      <p class="ad-label">Publicidade</p>
-      <div class="ad-slot" data-ad-slot="home-top" data-ad-format="auto"></div>
-    </section>
-
     <!-- ================= TODOS OS PRODUTOS ================= -->
     <section class="section" id="recomendacoes" aria-labelledby="recTitle">
       <div class="wrap">
@@ -262,12 +257,6 @@
           <button class="btn btn--ghost" type="button" id="resetFilters">Limpar filtros</button>
         </div>
       </div>
-    </section>
-
-    <!-- ================= PUBLICIDADE ================= -->
-    <section class="ad-section wrap" data-ad-section hidden aria-label="Publicidade">
-      <p class="ad-label">Publicidade</p>
-      <div class="ad-slot" data-ad-slot="home-bottom" data-ad-format="auto"></div>
     </section>
 
     <!-- ================= COMO FUNCIONA ================= -->
@@ -376,10 +365,6 @@
           <a href="#recomendacoes">Produtos</a>
           <a href="#como-funciona">Como funciona</a>
           <a href="#faq">FAQ</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="contato.html">Contato</a>
-          <a href="politica-de-privacidade.html">Privacidade</a>
-          <a href="#" data-cookie-open>Preferências de cookies</a>
           <a href="https://www.mercadolivre.com.br/ajuda/30228" target="_blank" rel="noopener noreferrer">Programa de afiliados</a>
           <a href="#conteudo">Voltar ao topo</a>
         </div>
@@ -398,10 +383,5 @@
       <p class="edit-banner is-visible">Ative o JavaScript para ver a vitrine e usar a busca.</p>
     </div>
   </noscript>
-
-  <div class="visit-counter" id="visitCounter" role="status" aria-live="polite" aria-label="Total de visitas ao site, sem cookies" title="Total de visitas ao site, sem cookies">
-    <span class="visit-counter-dot" aria-hidden="true"></span>
-    <strong id="visitCount">—</strong> <span id="visitLabel">visitas</span>
-  </div>
 </body>
 </html>

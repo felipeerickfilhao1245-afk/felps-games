@@ -309,9 +309,9 @@ const PRODUTOS = [
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/2eNZ7RC",
-    preco: "R$ 389,99",
-    precoAnterior: "R$ 499,99",
-    desconto: 22,
+    preco: "R$ 340,39",
+    precoAnterior: "R$ 499,00",
+    desconto: 31,
     estoque: true,
     full: false,
     descricao: "Controle sem fio Microsoft para Xbox Series X|S e PC, com conexão Bluetooth e USB-C. O formato ergonômico e os botões conhecidos dos controles Xbox funcionam no console e no computador.",
@@ -774,53 +774,6 @@ function bindControls() {
   });
 }
 
-const CACHE_VISITAS = "felps-visitas";
-
-function lerVisitasSalvas() {
-  try {
-    const bruto = window.localStorage.getItem(CACHE_VISITAS);
-    if (bruto == null || bruto === "") return null;
-    const total = Number(bruto);
-    return Number.isFinite(total) && total >= 0 ? total : null;
-  } catch {
-    return null;
-  }
-}
-
-function salvarVisitas(total) {
-  try {
-    window.localStorage.setItem(CACHE_VISITAS, String(total));
-  } catch {
-    // Sem localStorage (modo privado), o contador continua funcionando.
-  }
-}
-
-function mostrarVisitas(caixa, alvo, rotulo, total) {
-  if (!Number.isFinite(total) || total < 0) return;
-  alvo.textContent = new Intl.NumberFormat("pt-BR").format(total);
-  rotulo.textContent = total === 1 ? "visita" : "visitas";
-  caixa.hidden = false;
-}
-
-async function consultarVisitas(url) {
-  const controle = new AbortController();
-  const prazo = setTimeout(() => controle.abort(), 8000);
-  try {
-    const resposta = await fetch(url, {
-      cache: "no-store",
-      headers: { Accept: "application/json" },
-      signal: controle.signal
-    });
-    if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
-    const dados = await resposta.json();
-    const total = Number(dados && dados.value);
-    if (!Number.isFinite(total) || total < 0) throw new Error("valor invalido");
-    return total;
-  } finally {
-    clearTimeout(prazo);
-  }
-}
-
 async function initContadorVisitas() {
   const caixa = document.getElementById("visitCounter");
   const alvo = document.getElementById("visitCount");
@@ -828,38 +781,28 @@ async function initContadorVisitas() {
   if (!caixa || !alvo || !rotulo) return;
 
   // Conta somente no dominio oficial; previsoes locais e o github.io ficam de fora.
-  if (!HOSTS_OFICIAIS.has(window.location.hostname)) {
-    caixa.hidden = true;
-    return;
-  }
+  if (!HOSTS_OFICIAIS.has(window.location.hostname)) return;
 
-  const salvo = lerVisitasSalvas();
-  if (salvo != null) mostrarVisitas(caixa, alvo, rotulo, salvo);
-
+  const url = `${ABACUS}/hit/felpsgames.com.br/visitas`;
   try {
-    let total;
-    try {
-      total = await consultarVisitas(`${ABACUS}/hit/felpsgames.com.br/visitas`);
-    } catch {
-      // O /hit pode falhar por limite de uso; o /get ainda mostra o total.
-      total = await consultarVisitas(`${ABACUS}/get/felpsgames.com.br/visitas`);
-    }
-    mostrarVisitas(caixa, alvo, rotulo, total);
-    salvarVisitas(total);
+    const resposta = await fetch(url, {
+      cache: "no-store",
+      headers: { Accept: "application/json" }
+    });
+    if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
+    const dados = await resposta.json();
+    const total = Number(dados && dados.value);
+    if (!Number.isFinite(total) || total < 0) throw new Error("valor invalido");
+
+    alvo.textContent = new Intl.NumberFormat("pt-BR").format(total);
+    rotulo.textContent = total === 1 ? "visita" : "visitas";
+    caixa.hidden = false;
   } catch {
-    // Se o servico estiver indisponivel, mantem o ultimo total salvo.
-    if (salvo == null) {
-      alvo.textContent = "—";
-      rotulo.textContent = "visitas";
-      caixa.hidden = false;
-    }
+    // Se o contador estiver indisponivel, o rodape continua funcionando normalmente.
   }
 }
 
 function init() {
-  // O contador e independente da vitrine: inicia primeiro para nao depender
-  // de nenhuma outra parte da pagina.
-  initContadorVisitas();
   bindProfile();
   bindGalerias();
   bindCliquesAfiliado();
@@ -868,6 +811,7 @@ function init() {
   bindControls();
   renderGrid();
   showStatusBanner();
+  initContadorVisitas();
 }
 
 document.addEventListener("DOMContentLoaded", init);
