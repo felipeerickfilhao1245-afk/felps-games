@@ -114,7 +114,7 @@ const PRODUTOS = [
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/2tig57c",
-    preco: "R$ 599,90",
+    preco: "R$ 460,20",
     nota: 5,
     avaliacoes: 1763,
     estoque: true,
