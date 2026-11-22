@@ -778,32 +778,97 @@ function bindControls() {
   });
 }
 
-async function initContadorVisitas() {
+const VISITAS_CACHE = "felps-visitas-v1";
+
+function lerVisitasSalvas() {
+  try {
+    const bruto = localStorage.getItem(VISITAS_CACHE);
+    if (!bruto) return null;
+    const dados = JSON.parse(bruto);
+    const total = Number(dados && dados.total);
+    return Number.isFinite(total) && total >= 0 ? total : null;
+  } catch {
+    return null;
+  }
+}
+
+function salvarVisitas(total) {
+  try {
+    localStorage.setItem(
+      VISITAS_CACHE,
+      JSON.stringify({ total, quando: Date.now() })
+    );
+  } catch {
+    // Modo privado ou armazenamento bloqueado: segue sem cache.
+  }
+}
+
+function mostrarVisitas(total) {
   const caixa = document.getElementById("visitCounter");
   const alvo = document.getElementById("visitCount");
   const rotulo = document.getElementById("visitLabel");
   if (!caixa || !alvo || !rotulo) return;
 
+  alvo.textContent = new Intl.NumberFormat("pt-BR").format(total);
+  rotulo.textContent = total === 1 ? "visita" : "visitas";
+  caixa.hidden = false;
+}
+
+function sinalDeTimeout(ms) {
+  if (
+    typeof AbortSignal !== "undefined" &&
+    typeof AbortSignal.timeout === "function"
+  ) {
+    return AbortSignal.timeout(ms);
+  }
+  if (typeof AbortController === "undefined") return undefined;
+  const controle = new AbortController();
+  setTimeout(() => controle.abort(), ms);
+  return controle.signal;
+}
+
+async function requisitarVisitas(incrementar) {
+  const acao = incrementar ? "hit" : "get";
+  const resposta = await fetch(`${ABACUS}/${acao}/felpsgames.com.br/visitas`, {
+    cache: "no-store",
+    credentials: "omit",
+    headers: { Accept: "application/json" },
+    signal: sinalDeTimeout(8000)
+  });
+  if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
+  const dados = await resposta.json();
+  const total = Number(dados && dados.value);
+  if (!Number.isFinite(total) || total < 0) throw new Error("valor invalido");
+  return total;
+}
+
+async function initContadorVisitas() {
+  const caixa = document.getElementById("visitCounter");
+  if (!caixa) return;
+
   // Conta somente no dominio oficial; previsoes locais e o github.io ficam de fora.
   if (!HOSTS_OFICIAIS.has(window.location.hostname)) return;
 
-  const url = `${ABACUS}/hit/felpsgames.com.br/visitas`;
-  try {
-    const resposta = await fetch(url, {
-      cache: "no-store",
-      headers: { Accept: "application/json" }
-    });
-    if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
-    const dados = await resposta.json();
-    const total = Number(dados && dados.value);
-    if (!Number.isFinite(total) || total < 0) throw new Error("valor invalido");
+  // Mostra na hora o ultimo valor salvo. Se o Abacus falhar ou demorar,
+  // o numero continua visivel em vez de sumir.
+  const salvo = lerVisitasSalvas();
+  if (salvo != null) mostrarVisitas(salvo);
 
-    alvo.textContent = new Intl.NumberFormat("pt-BR").format(total);
-    rotulo.textContent = total === 1 ? "visita" : "visitas";
-    caixa.hidden = false;
-  } catch {
-    // Se o contador estiver indisponivel, o rodape continua funcionando normalmente.
+  // A primeira tentativa conta a visita; as seguintes apenas releem o valor,
+  // para nao inflar o contador quando a resposta se perde no caminho.
+  for (let tentativa = 1; tentativa <= 3; tentativa += 1) {
+    try {
+      const total = await requisitarVisitas(tentativa === 1);
+      salvarVisitas(total);
+      mostrarVisitas(total);
+      return;
+    } catch {
+      if (tentativa < 3) {
+        await new Promise((resolve) => setTimeout(resolve, 1200 * tentativa));
+      }
+    }
   }
+  // Sem resposta e sem cache: mantem oculto para nao exibir numero errado.
 }
 
 function init() {
