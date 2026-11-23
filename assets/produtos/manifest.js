@@ -96,6 +96,13 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/playstation-5-slim-disk-1-tb-com-1-controle-branco-sony/01.webp?v=4772d16566",
     "assets/produtos/playstation-5-slim-disk-1-tb-com-1-controle-branco-sony/02.webp?v=98f6ba6d33"
   ],
+  "ssd kingston nv3 1 tb m2 nvme pcie 4 0 x4 para pc e ps5": [
+    "assets/produtos/ssd-kingston-nv3-1-tb-m2-nvme-pcie-4-0-x4-para-pc-e-ps5/01.webp?v=be2436366c",
+    "assets/produtos/ssd-kingston-nv3-1-tb-m2-nvme-pcie-4-0-x4-para-pc-e-ps5/02.webp?v=9d308c18a6",
+    "assets/produtos/ssd-kingston-nv3-1-tb-m2-nvme-pcie-4-0-x4-para-pc-e-ps5/03.webp?v=272fc1cfef",
+    "assets/produtos/ssd-kingston-nv3-1-tb-m2-nvme-pcie-4-0-x4-para-pc-e-ps5/04.webp?v=5e24904d3c",
+    "assets/produtos/ssd-kingston-nv3-1-tb-m2-nvme-pcie-4-0-x4-para-pc-e-ps5/05.webp?v=216c0f0345"
+  ],
   "suporte monitor preto pc gamer base informatica prateleira": [
     "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/01.webp?v=98ee199d2a",
     "assets/produtos/suporte-monitor-preto-pc-gamer-base-informatica-prateleira/02.webp?v=2d72df40ed",

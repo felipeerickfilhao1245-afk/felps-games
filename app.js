@@ -375,6 +375,27 @@ const PRODUTOS = [
     testado: false,
     destaque: null
   },
+  {
+    nome: "SSD Kingston NV3 1 TB M.2 NVMe PCIe 4.0 x4 para PC e PS5",
+    pasta: "ssd-kingston-nv3-1-tb-m2-nvme-pcie-4-0-x4-para-pc-e-ps5",
+    nicho: "Eletrônicos",
+    emoji: "💾",
+    imagem: "",
+    link: "https://meli.la/2JsgSM7",
+    preco: "R$ 1.099,00",
+    estoque: true,
+    full: false,
+    descricao: "SSD Kingston NV3 de 1 TB no formato M.2 2280, com interface PCIe 4.0 x4 e NVMe. Serve para dar mais espaço e velocidade ao PC e também para o slot M.2 do PlayStation 5. O anúncio tem nota 4,9 e mais de 5 mil vendidos.",
+    publico: "quem quer mais espaço e velocidade no PC ou no PS5",
+    pros: [
+      "1 TB no formato M.2 2280",
+      "PCIe 4.0 x4 com NVMe",
+      "Compatível com PC e com o slot M.2 do PS5"
+    ],
+    atencao: "No PS5, é preciso usar um dissipador (heatsink) de M.2 e o console precisa ter o slot NVMe; confira se o anúncio inclui o dissipador. A velocidade e a durabilidade variam com o uso; confirme a garantia e se o produto é original Kingston. As imagens mostram o modelo SNV3S/1000G.",
+    testado: false,
+    destaque: null
+  },
 ];
 
 /* ============================================================
