@@ -12,6 +12,13 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/caixa-de-som-bluetooth-portatil/05.webp?v=da494cbeb5",
     "assets/produtos/caixa-de-som-bluetooth-portatil/06.webp?v=0ad90687b8"
   ],
+  "carregador turbo 40w para iphone 11 12 13 14 pro max usb branco": [
+    "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/01.webp?v=c40bcc3c9d",
+    "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/02.webp?v=319c0372e9",
+    "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/03.webp?v=70d2dda4ca",
+    "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/04.webp?v=0a1363013d",
+    "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/05.webp?v=0e73022c5e"
+  ],
   "controle microsoft wireless carbon black para xbox series x s e pc": [
     "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/01.webp?v=9584b2d4e2",
     "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/02.webp?v=e532d21939",

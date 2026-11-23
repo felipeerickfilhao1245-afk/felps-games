@@ -29,7 +29,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg?v=e62508aea4",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso especificações antes de recomendar.",
-  atualizado: "2026-11-20",
+  atualizado: "2026-11-22",
   dadosConfirmados: true
 };
 
@@ -349,6 +349,29 @@ const PRODUTOS = [
       "Acompanha um controle DualSense"
     ],
     atencao: "Confira no anúncio a garantia, a região do console e se o modelo é mesmo o Slim com leitor de disco. Os jogos são vendidos separadamente.",
+    testado: false,
+    destaque: null
+  },
+  {
+    nome: "Carregador Turbo 40W para iPhone 11 12 13 14 Pro Max USB Branco",
+    pasta: "carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco",
+    nicho: "Eletrônicos",
+    emoji: "🔌",
+    imagem: "",
+    link: "https://meli.la/2KMuehS",
+    preco: "R$ 39,70",
+    precoAnterior: "R$ 49,99",
+    desconto: 20,
+    estoque: true,
+    full: false,
+    descricao: "Carregador turbo de 40 W com duas portas, USB-C e USB-A, para carregar dois aparelhos ao mesmo tempo. O anúncio mostra cabo de 1 m com conector Lightning, compatível com iPhone 8 ao 14, e fonte bivolt automática de 100–240 V. Tem nota 4,8 e mais de 10 mil vendidos.",
+    publico: "quem quer um carregador extra para o iPhone ou para levar na mochila",
+    pros: [
+      "Duas portas: USB-C e USB-A",
+      "Carrega dois dispositivos ao mesmo tempo",
+      "Bivolt automático 100–240 V"
+    ],
+    atencao: "A potência de 40 W é a anunciada para o conjunto; o iPhone pode limitar a velocidade de carga. Confira na descrição se o cabo de 1 m acompanha, o tipo de conector e a garantia. As imagens mostram o selo ANATEL 02606-23-13363.",
     testado: false,
     destaque: null
   },
