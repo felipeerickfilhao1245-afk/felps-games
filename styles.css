@@ -1495,6 +1495,69 @@ footer {
 }
 
 /* ============================================================
+   AVISO PARA O NAVEGADOR BRAVE
+   ============================================================ */
+.brave-notice {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 110;
+  width: min(430px, calc(100vw - 32px));
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-size: 0.88rem;
+}
+
+.brave-notice-text strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.brave-notice-text p {
+  margin: 6px 0 0;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.brave-notice-text b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.brave-notice-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+@media (max-width: 560px) {
+  .brave-notice {
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
+
+  .brave-notice-actions {
+    justify-content: stretch;
+  }
+
+  .brave-notice-actions .btn {
+    flex: 1 1 auto;
+  }
+}
+
+@media print {
+  .brave-notice {
+    display: none !important;
+  }
+}
+
+/* ============================================================
    PÁGINA DE PRIVACIDADE
    ============================================================ */
 .legal-page {

@@ -61,6 +61,9 @@
   const SCRIPT_ID = "adsbygoogle-script";
   const SCRIPT_URL = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
   const SLOT_VALIDO = /^\d{5,}$/;
+  const AVISO_BRAVE_CHAVE = "felps-aviso-brave-v1";
+  const AVISO_BRAVE_VALIDADE = 30 * 24 * 60 * 60 * 1000;
+  const AVISO_BRAVE_ID = "brave-ads-notice";
 
   const estado = {
     scriptCarregando: null,
@@ -356,6 +359,92 @@
     }
   }
 
+  function ehBrave() {
+    const porUserAgent = /\bBrave\//i.test(navigator.userAgent);
+    try {
+      if (navigator.brave && typeof navigator.brave.isBrave === "function") {
+        return navigator.brave
+          .isBrave()
+          .then((valor) => Boolean(valor) || porUserAgent)
+          .catch(() => porUserAgent);
+      }
+    } catch {
+      // Sem a API do Brave: usa apenas o user agent.
+    }
+    return Promise.resolve(porUserAgent);
+  }
+
+  function avisoBraveDispensado() {
+    try {
+      const bruto = localStorage.getItem(AVISO_BRAVE_CHAVE);
+      if (!bruto) return false;
+      const dados = JSON.parse(bruto);
+      const quando = Number(dados && dados.quando);
+      if (!Number.isFinite(quando) || Date.now() - quando > AVISO_BRAVE_VALIDADE) {
+        localStorage.removeItem(AVISO_BRAVE_CHAVE);
+        return false;
+      }
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  function dispensarAvisoBrave() {
+    try {
+      localStorage.setItem(AVISO_BRAVE_CHAVE, JSON.stringify({ quando: Date.now() }));
+    } catch {
+      // Sem armazenamento: o aviso pode voltar na próxima visita.
+    }
+  }
+
+  function mostrarAvisoBrave() {
+    if (document.getElementById(AVISO_BRAVE_ID) || avisoBraveDispensado()) return;
+
+    const aviso = document.createElement("aside");
+    aviso.id = AVISO_BRAVE_ID;
+    aviso.className = "brave-notice";
+    aviso.setAttribute("role", "region");
+    aviso.setAttribute("aria-label", "Anúncios bloqueados pelo Brave");
+    aviso.innerHTML = `
+      <div class="brave-notice-text">
+        <strong>Brave bloqueou os anúncios</strong>
+        <p>
+          O Brave bloqueia anúncios por padrão. Clique no ícone de leão (Escudos) ao lado do
+          endereço, permita anúncios para <b>felpsgames.com.br</b> e recarregue a página.
+          O site continua funcionando normalmente sem anúncios.
+        </p>
+      </div>
+      <div class="brave-notice-actions">
+        <button type="button" class="btn btn--ghost btn--sm" data-brave-fechar>Fechar</button>
+        <button type="button" class="btn btn--dark btn--sm" data-brave-recarregar>Recarregar</button>
+      </div>
+    `;
+    document.body.appendChild(aviso);
+
+    const fechar = aviso.querySelector("[data-brave-fechar]");
+    if (fechar) {
+      fechar.addEventListener("click", () => {
+        dispensarAvisoBrave();
+        aviso.remove();
+      });
+    }
+
+    const recarregar = aviso.querySelector("[data-brave-recarregar]");
+    if (recarregar) {
+      recarregar.addEventListener("click", () => location.reload());
+    }
+  }
+
+  function avisarBraveSeBloqueado() {
+    if (!ANUNCIOS_ATIVOS) return;
+    if (!hostPermitido() || !paginaPermiteAnuncios()) return;
+    if (lerConsentimento() !== true) return;
+    ehBrave().then((brave) => {
+      if (brave) mostrarAvisoBrave();
+    });
+  }
+
   function carregarAdSense() {
     if (!ANUNCIOS_ATIVOS) return Promise.resolve(false);
     if (!hostPermitido() || !paginaPermiteAnuncios()) return Promise.resolve(false);
@@ -370,7 +459,10 @@
         iniciarSlots();
         return true;
       })
-      .catch(() => false);
+      .catch(() => {
+        avisarBraveSeBloqueado();
+        return false;
+      });
   }
 
   function desativarAnuncios() {
