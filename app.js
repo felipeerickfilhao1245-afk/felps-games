@@ -29,7 +29,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg?v=e62508aea4",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso especificações antes de recomendar.",
-  atualizado: "2026-11-22",
+  atualizado: "2026-11-23",
   dadosConfirmados: true
 };
 
@@ -114,7 +114,9 @@ const PRODUTOS = [
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/2tig57c",
-    preco: "R$ 577,00",
+    preco: "R$ 417,57",
+    precoAnterior: "R$ 499,00",
+    desconto: 16,
     nota: 5,
     avaliacoes: 1763,
     estoque: true,
@@ -162,9 +164,9 @@ const PRODUTOS = [
     emoji: "🖱️",
     imagem: "",
     link: "https://meli.la/1TTwFTw",
-    preco: "R$ 21,90",
+    preco: "R$ 20,49",
     precoAnterior: "R$ 49,90",
-    desconto: 56,
+    desconto: 58,
     nota: 4.8,
     avaliacoes: 6294,
     estoque: true,
@@ -311,9 +313,9 @@ const PRODUTOS = [
     emoji: "🎮",
     imagem: "",
     link: "https://meli.la/2eNZ7RC",
-    preco: "R$ 379,90",
-    precoAnterior: "R$ 479,00",
-    desconto: 20,
+    preco: "R$ 369,99",
+    precoAnterior: "R$ 499,00",
+    desconto: 25,
     estoque: true,
     full: false,
     descricao: "Controle sem fio Microsoft para Xbox Series X|S e PC, com conexão Bluetooth e USB-C. O formato ergonômico e os botões conhecidos dos controles Xbox funcionam no console e no computador.",
@@ -337,7 +339,7 @@ const PRODUTOS = [
     preco: "R$ 4.702,00",
     precoAnterior: "R$ 4.950,00",
     desconto: 5,
-    estoque: true,
+    estoque: false,
     full: false,
     descricao: "Console PlayStation 5 Slim com leitor de disco, SSD de 1 TB e um controle DualSense branco. Uma opção para jogar os lançamentos do PS5 em mídia física e digital.",
     publico: "quem quer entrar na geração PS5 com leitor de disco",
@@ -391,6 +393,30 @@ const PRODUTOS = [
       "Compatível com PC e com o slot M.2 do PS5"
     ],
     atencao: "No PS5, é preciso usar um dissipador (heatsink) de M.2 e o console precisa ter o slot NVMe; confira se o anúncio inclui o dissipador. A velocidade e a durabilidade variam com o uso; confirme a garantia e se o produto é original Kingston. As imagens mostram o modelo SNV3S/1000G.",
+    testado: false,
+    destaque: null
+  },
+  {
+    nome: "Adaptador Hub USB-C 8 em 1 PDO Cabo tipo C com HDMI 4K, RJ45 Ethernet e Leitor de Cartão para MacBook, iPad, Notebook, Tablet e PC",
+    pasta: "adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao",
+    nicho: "Eletrônicos",
+    emoji: "🔌",
+    imagem: "",
+    link: "https://meli.la/2UUJ7FX",
+    preco: "R$ 47,50",
+    precoAnterior: "R$ 69,90",
+    desconto: 32,
+    estoque: true,
+    full: false,
+    descricao: "Hub USB-C de 8 portas da PDO que transforma uma única entrada USB-C em HDMI 4K, rede RJ45, duas USB-A 3.0, uma USB-C 3.1, leitor SD e microSD e uma porta USB-C PD de até 100 W. O corpo de alumínio ajuda a dissipar o calor e deixa a mesa mais organizada.",
+    publico: "quem usa notebook, tablet ou celular com USB-C e precisa de mais portas",
+    pros: [
+      "HDMI 4K, RJ45 e leitor SD/microSD",
+      "Duas USB-A 3.0 e uma USB-C 3.1",
+      "Passagem de carga USB-C PD de até 100 W",
+      "Corpo de alumínio"
+    ],
+    atencao: "A porta USB-C PD serve para carregar o notebook, não para dados. A resolução de 4K e a velocidade da rede dependem do aparelho e do cabo: confirme no anúncio a potência de carga, o padrão da Ethernet e se o seu dispositivo tem saída de vídeo pelo USB-C.",
     testado: false,
     destaque: null
   },
@@ -536,20 +562,23 @@ function imagensDoProduto(produto) {
   return produto.imagem ? [produto.imagem] : [];
 }
 
-function mediaHtml(produto) {
+function mediaHtml(produto, prioridade = false) {
   const emoji = emojiHtml(produto.emoji, "media-fallback");
   const imagens = imagensDoProduto(produto);
   if (imagens.length === 0) return emoji;
 
   const total = imagens.length;
-  const principal = `<img class="media-main" src="${escapeHtml(imagens[0])}" alt="${escapeHtml(produto.nome)}" loading="lazy" decoding="async" onerror="this.closest('.card-media').classList.add('sem-imagem'); this.remove();" />`;
+  const carga = prioridade
+    ? 'loading="eager" fetchpriority="high"'
+    : 'loading="lazy"';
+  const principal = `<img class="media-main" src="${escapeHtml(imagens[0])}" alt="${escapeHtml(produto.nome)}" width="600" height="600" ${carga} decoding="async" onerror="this.closest('.card-media').classList.add('sem-imagem'); this.remove();" />`;
 
   if (total === 1) return principal + emoji;
 
   const miniaturas = imagens.map((src, indice) => {
     const numero = indice + 1;
     return `<button class="media-thumb${indice === 0 ? " is-active" : ""}" type="button" data-src="${escapeHtml(src)}" data-media-index="${indice}" aria-label="Ver foto ${numero} de ${total}" aria-pressed="${indice === 0}">
-        <img src="${escapeHtml(src)}" alt="" loading="lazy" decoding="async" onerror="this.parentElement.remove()" />
+        <img src="${escapeHtml(src)}" alt="" width="96" height="96" loading="lazy" decoding="async" onerror="this.parentElement.remove()" />
       </button>`;
   }).join("");
 
@@ -609,7 +638,7 @@ function botaoHtml(produto, origem) {
     <p class="affiliate-note">Você será direcionado ao Mercado Livre · link de afiliado${produto.testado ? " · produto testado por mim" : " · análise por especificações"}</p>`;
 }
 
-function cardHtml(produto, destaque) {
+function cardHtml(produto, destaque, prioridade = false) {
   const posicao = destaque && produto.destaque
     ? `<span class="rank">#${escapeHtml(produto.destaque)}</span>`
     : "";
@@ -623,6 +652,7 @@ function cardHtml(produto, destaque) {
   const entregaFull = produto.full !== false;
   const desconto = Number(produto.desconto);
   const temDesconto =
+    temEstoque &&
     typeof produto.precoAnterior === "string" &&
     produto.precoAnterior.trim() !== "" &&
     Number.isFinite(desconto) &&
@@ -635,7 +665,7 @@ function cardHtml(produto, destaque) {
 
   return `<article class="card${destaque ? " card--featured" : ""}">
     <div class="card-media">
-      ${mediaHtml(produto)}
+      ${mediaHtml(produto, prioridade)}
       ${posicao}
     </div>
     <div class="card-body">
@@ -651,7 +681,7 @@ function cardHtml(produto, destaque) {
       <div class="price-row">
         <span class="price">${escapeHtml(produto.preco)}</span>
         ${seloDesconto}
-        <span class="price-note">preço de referência</span>
+        <span class="price-note">${temEstoque ? "preço de referência" : "último preço de referência"}</span>
       </div>
       <ul class="pros">${pros}</ul>
       ${atencaoHtml(produto)}
@@ -666,7 +696,9 @@ function renderTop() {
     .sort((a, b) => a.destaque - b.destaque)
     .slice(0, MAX_DESTAQUES);
 
-  $("podiumGrid").innerHTML = top.map((produto) => cardHtml(produto, true)).join("");
+  $("podiumGrid").innerHTML = top
+    .map((produto, indice) => cardHtml(produto, true, indice === 0))
+    .join("");
 }
 
 // Cores dos chips de categoria: vermelho=promocoes, amarelo=ofertas,

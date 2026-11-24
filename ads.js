@@ -607,7 +607,7 @@
     document.addEventListener("click", (evento) => {
       const alvo =
         evento.target && evento.target.closest
-          ? evento.target.closest("[data-cookie-prefs]")
+          ? evento.target.closest("[data-cookie-prefs], [data-cookie-open]")
           : null;
       if (!alvo) return;
       evento.preventDefault();

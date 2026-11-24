@@ -4,6 +4,15 @@
    ============================================================ */
 
 window.IMAGENS_PRODUTOS = {
+  "adaptador hub usb c 8 em 1 pdo cabo tipo c hdmi 4k rj45 ethernet leitor de cartao": [
+    "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/01.webp?v=135a7b3955",
+    "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/02.webp?v=a1b4ac687b",
+    "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/03.webp?v=8264134e60",
+    "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/04.webp?v=71296272a2",
+    "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/05.webp?v=2aa2f01da0",
+    "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/06.webp?v=80f40f823c",
+    "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/07.webp?v=aef198160f"
+  ],
   "caixa de som bluetooth portatil": [
     "assets/produtos/caixa-de-som-bluetooth-portatil/01.webp?v=9a9e204993",
     "assets/produtos/caixa-de-som-bluetooth-portatil/02.webp?v=71e2818e17",
