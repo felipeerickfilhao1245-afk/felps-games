@@ -378,7 +378,7 @@ const PRODUTOS = [
     emoji: "💾",
     imagem: "",
     link: "https://meli.la/2JsgSM7",
-    preco: "R$ 1.099,00",
+    preco: "R$ 1.169,00",
     estoque: true,
     full: false,
     descricao: "SSD Kingston NV3 de 1 TB no formato M.2 2280, com interface PCIe 4.0 x4 e NVMe. Serve para dar mais espaço e velocidade ao PC e também para o slot M.2 do PlayStation 5. O anúncio tem nota 4,9 e mais de 5 mil vendidos.",
