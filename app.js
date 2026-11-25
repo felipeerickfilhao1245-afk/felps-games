@@ -131,6 +131,27 @@ const PRODUTOS = [
     destaque: 3
   },
   {
+    nome: "Grand Theft Auto VI: Ultimate Edition (Xbox Series X|S)",
+    pasta: "grand-theft-auto-vi-ultimate-edition-xbox-series-x-s",
+    nicho: "Games",
+    emoji: "🎮",
+    imagem: "",
+    link: "https://meli.la/27fVbWx",
+    preco: "R$ 549,90",
+    estoque: true,
+    full: false,
+    descricao: "Grand Theft Auto VI: Ultimate Edition para Xbox Series X|S em versão digital. Inclui o jogo completo e os conteúdos extras da edição Ultimate, com a história de Lucia e Jason em Vice City, no estado de Leonida.",
+    publico: "quem joga no Xbox Series X|S e quer a edição Ultimate de GTA VI",
+    pros: [
+      "Edição Ultimate digital",
+      "Jogo completo para Xbox Series X|S",
+      "Conteúdos extras da edição Ultimate"
+    ],
+    atencao: "É uma versão digital, sem disco: o acesso é feito por código ou pela conta Xbox, conforme o anúncio. Confira a região da conta, o prazo de entrega e se o resgate exige conexão com a internet. Jogo indicado para maiores de 18 anos.",
+    testado: false,
+    destaque: null
+  },
+  {
     nome: "Kit Teclado Mouse Gamer Completo Barato Com Fio Cabo De 1,5m Led Com Iluminação Rgb Desktop Conexão Usb Cor Preto Usar Com Headset Acessorios Pc Mecanico Jogos - Goodvision",
     pasta: "kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55",
     nicho: "Games",

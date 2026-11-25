@@ -73,6 +73,9 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/grand-theft-auto-vi-playstation-5/05.webp?v=15a446237a",
     "assets/produtos/grand-theft-auto-vi-playstation-5/06.webp?v=19ee56a544"
   ],
+  "grand theft auto vi ultimate edition xbox series x s": [
+    "assets/produtos/grand-theft-auto-vi-ultimate-edition-xbox-series-x-s/01.webp?v=fe30fa9c3b"
+  ],
   "headset gamer com microfone": [
     "assets/produtos/headset-gamer-com-microfone/01.webp?v=7b92712ed2",
     "assets/produtos/headset-gamer-com-microfone/02.webp?v=f4f661419b",
