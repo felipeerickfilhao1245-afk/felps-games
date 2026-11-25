@@ -349,6 +349,29 @@ const PRODUTOS = [
     destaque: null
   },
   {
+    nome: "Console Xbox Series S 512gb Branco - Rrs-00006 Branco",
+    pasta: "console-xbox-series-s-512gb-branco-rrs-00006-branco",
+    nicho: "Games",
+    emoji: "🎮",
+    imagem: "",
+    link: "https://meli.la/1Ee51vY",
+    preco: "R$ 3.665,00",
+    precoAnterior: "R$ 3.899,00",
+    desconto: 6,
+    estoque: true,
+    full: false,
+    descricao: "Console Xbox Series S com SSD de 512 GB na cor branca, acompanhado de um controle sem fio. É a porta de entrada para a geração Xbox Series X|S, com jogos digitais, Quick Resume e retrocompatibilidade com títulos de Xbox One e Xbox 360.",
+    publico: "quem quer entrar na geração Xbox com um console compacto e digital",
+    pros: [
+      "SSD de 512 GB",
+      "Console compacto e silencioso",
+      "Acompanha um controle sem fio"
+    ],
+    atencao: "O Series S é totalmente digital: não tem leitor de disco, então os jogos precisam ser baixados da loja. Confira no anúncio a garantia, a região do console e se o controle acompanha pilhas.",
+    testado: false,
+    destaque: null
+  },
+  {
     nome: "Carregador Turbo 40W para iPhone 11 12 13 14 Pro Max USB Branco",
     pasta: "carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco",
     nicho: "Eletrônicos",

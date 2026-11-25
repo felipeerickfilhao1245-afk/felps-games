@@ -28,6 +28,11 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/04.webp?v=0a1363013d",
     "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/05.webp?v=0e73022c5e"
   ],
+  "console xbox series s 512gb branco rrs 00006 branco": [
+    "assets/produtos/console-xbox-series-s-512gb-branco-rrs-00006-branco/01.webp?v=9cb4f7d22d",
+    "assets/produtos/console-xbox-series-s-512gb-branco-rrs-00006-branco/02.webp?v=03a040b41d",
+    "assets/produtos/console-xbox-series-s-512gb-branco-rrs-00006-branco/03.webp?v=262f96e749"
+  ],
   "controle microsoft wireless carbon black para xbox series x s e pc": [
     "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/01.webp?v=9584b2d4e2",
     "assets/produtos/controle-microsoft-wireless-carbon-black-para-xbox-series-x-s-e-pc/02.webp?v=e532d21939",
