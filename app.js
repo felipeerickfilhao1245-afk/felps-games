@@ -29,7 +29,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg?v=e62508aea4",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso especificações antes de recomendar.",
-  atualizado: "2026-11-24",
+  atualizado: "2026-11-25",
   dadosConfirmados: true
 };
 
