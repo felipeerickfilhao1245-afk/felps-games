@@ -96,11 +96,11 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/headset-gamer-com-microfone/09.webp?v=847b4fcd1b"
   ],
   "jogo gta 5 ps5 grand theft auto v ps5 midia fisica": [
-    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/01.webp?v=e69610b325",
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/01.webp?v=f3c19c6d55",
     "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/02.webp?v=3aef4d1f7e",
-    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/03.webp?v=f3c19c6d55",
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/03.webp?v=01860b4f52",
     "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/04.webp?v=77498129ec",
-    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/05.webp?v=01860b4f52"
+    "assets/produtos/jogo-gta-5-ps5-grand-theft-auto-v-ps5-midia-fisica/05.webp?v=e69610b325"
   ],
   "kit teclado e mouse gamer rgb usb com iluminacao led layout abnt2 bk g55": [
     "assets/produtos/kit-teclado-e-mouse-gamer-rgb-usb-com-iluminacao-led-layout-abnt2-bk-g55/01.webp?v=c25c8a20f4",
