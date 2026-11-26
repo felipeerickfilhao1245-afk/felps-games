@@ -352,25 +352,26 @@ const PRODUTOS = [
     destaque: null
   },
   {
-    nome: "PlayStation 5 Slim Disk 1 TB com 1 Controle Branco Sony",
-    pasta: "playstation-5-slim-disk-1-tb-com-1-controle-branco-sony",
+    nome: "Console digital Sony Playstation 5 Ps5 Slim + 2 jogos Astro Bot e Gt7 - branco 825 GB",
+    pasta: "console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825",
     nicho: "Games",
     emoji: "🎮",
     imagem: "",
-    link: "https://meli.la/2HonhMv",
-    preco: "R$ 4.603,00",
-    precoAnterior: "R$ 4.950,00",
-    desconto: 7,
-    estoque: false,
+    link: "https://meli.la/1vo3q2Q",
+    preco: "R$ 5.800,00",
+    nota: 4.9,
+    avaliacoes: 25,
+    estoque: true,
     full: false,
-    descricao: "Console PlayStation 5 Slim com leitor de disco, SSD de 1 TB e um controle DualSense branco. Uma opção para jogar os lançamentos do PS5 em mídia física e digital.",
-    publico: "quem quer entrar na geração PS5 com leitor de disco",
+    descricao: "Console PlayStation 5 Slim digital na cor branca, com 825 GB de armazenamento, um controle DualSense e os jogos Astro Bot e Gran Turismo 7 incluídos no pacote. As imagens mostram a caixa do bundle, o console sem leitor de disco e o controle. Confira no anúncio como os dois jogos são entregues.",
+    publico: "quem quer um PS5 Slim digital com dois jogos para começar a jogar",
     pros: [
-      "Leitor de disco integrado",
-      "SSD de 1 TB",
-      "Acompanha um controle DualSense"
+      "PS5 Slim digital com 825 GB",
+      "Acompanha um controle DualSense",
+      "Inclui Astro Bot e Gran Turismo 7",
+      "Console branco, sem leitor de disco"
     ],
-    atencao: "Confira no anúncio a garantia, a região do console e se o modelo é mesmo o Slim com leitor de disco. Os jogos são vendidos separadamente.",
+    atencao: "O console é digital e não tem leitor de disco. Confira no anúncio se Astro Bot e Gran Turismo 7 vêm como códigos digitais ou mídia física, a região da conta e a garantia. As imagens mostram a caixa do bundle; confirme o conteúdo exato antes de comprar.",
     testado: false,
     destaque: null
   },
@@ -490,7 +491,7 @@ const PRODUTOS = [
     atencao: "Confira no anúncio a capacidade de peso, as medidas montadas e como a luz RGB é alimentada. O estofamento é em couro sintético; a durabilidade e o conforto dependem do uso e da montagem.",
     testado: false,
     destaque: null
-  },
+  }
 ];
 
 /* ============================================================

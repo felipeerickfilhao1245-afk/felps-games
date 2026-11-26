@@ -36,6 +36,16 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/04.webp?v=0a1363013d",
     "assets/produtos/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/05.webp?v=0e73022c5e"
   ],
+  "console digital sony playstation 5 ps5 slim 2 jogos astro bot e gt7 branco 825": [
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/01.webp?v=4772d16566",
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/02.webp?v=f06c96154c",
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/03.webp?v=76adf732f1",
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/04.webp?v=89f0ba92fd",
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/05.webp?v=e1b97dab2a",
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/06.webp?v=4520db35fd",
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/07.webp?v=98f6ba6d33",
+    "assets/produtos/console-digital-sony-playstation-5-ps5-slim-2-jogos-astro-bot-e-gt7-branco-825/08.webp?v=7e07fbe629"
+  ],
   "console xbox series s 512gb branco rrs 00006 branco": [
     "assets/produtos/console-xbox-series-s-512gb-branco-rrs-00006-branco/01.webp?v=9cb4f7d22d",
     "assets/produtos/console-xbox-series-s-512gb-branco-rrs-00006-branco/02.webp?v=03a040b41d",
@@ -116,10 +126,6 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/mouse-gamer-sem-fio/03.webp?v=f8778d6ca3",
     "assets/produtos/mouse-gamer-sem-fio/04.webp?v=b918f3a3e2",
     "assets/produtos/mouse-gamer-sem-fio/05.webp?v=64c2ff2f6c"
-  ],
-  "playstation 5 slim disk 1 tb com 1 controle branco sony": [
-    "assets/produtos/playstation-5-slim-disk-1-tb-com-1-controle-branco-sony/01.webp?v=4772d16566",
-    "assets/produtos/playstation-5-slim-disk-1-tb-com-1-controle-branco-sony/02.webp?v=98f6ba6d33"
   ],
   "ssd kingston nv3 1 tb m2 nvme pcie 4 0 x4 para pc e ps5": [
     "assets/produtos/ssd-kingston-nv3-1-tb-m2-nvme-pcie-4-0-x4-para-pc-e-ps5/01.webp?v=be2436366c",
