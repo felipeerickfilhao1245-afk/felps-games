@@ -74,13 +74,13 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/extensao-filtro-linha-turbo-pd-regua-5-tomadas-usb-c-inducao/06.webp?v=5c5afb5717"
   ],
   "fone de ouvido gamer in ear dapon r11 tws bluetooth 5 1 rgb cor preto": [
-    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/01.webp?v=9f95d95bae",
-    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/02.webp?v=1e85e06ac7",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/01.webp?v=c961859c24",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/02.webp?v=fb6f78781e",
     "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/03.webp?v=769e5995fd",
-    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/04.webp?v=fb6f78781e",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/04.webp?v=1e85e06ac7",
     "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/05.webp?v=15ea249229",
     "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/06.webp?v=a139db3a7f",
-    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/07.webp?v=c961859c24",
+    "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/07.webp?v=9f95d95bae",
     "assets/produtos/fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto/08.webp?v=73b935d55e"
   ],
   "fone de ouvido gamer in ear vellon tws bluetooth 5 0": [
