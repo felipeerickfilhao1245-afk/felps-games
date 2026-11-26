@@ -13,6 +13,14 @@ window.IMAGENS_PRODUTOS = {
     "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/06.webp?v=80f40f823c",
     "assets/produtos/adaptador-hub-usb-c-8-em-1-pdo-cabo-tipo-c-hdmi-4k-rj45-ethernet-leitor-de-cartao/07.webp?v=aef198160f"
   ],
+  "cadeira gamer e escritorio x ray fit com led rgb ergonomica cor preta couro sintetico": [
+    "assets/produtos/cadeira-gamer-e-escritorio-x-ray-fit-com-led-rgb-ergonomica-cor-preta-couro-sintetico/01.webp?v=27305bff26",
+    "assets/produtos/cadeira-gamer-e-escritorio-x-ray-fit-com-led-rgb-ergonomica-cor-preta-couro-sintetico/02.webp?v=d425a04346",
+    "assets/produtos/cadeira-gamer-e-escritorio-x-ray-fit-com-led-rgb-ergonomica-cor-preta-couro-sintetico/03.webp?v=67f14921a0",
+    "assets/produtos/cadeira-gamer-e-escritorio-x-ray-fit-com-led-rgb-ergonomica-cor-preta-couro-sintetico/04.webp?v=cd3dbb24fd",
+    "assets/produtos/cadeira-gamer-e-escritorio-x-ray-fit-com-led-rgb-ergonomica-cor-preta-couro-sintetico/05.webp?v=c48cd69775",
+    "assets/produtos/cadeira-gamer-e-escritorio-x-ray-fit-com-led-rgb-ergonomica-cor-preta-couro-sintetico/06.webp?v=e8dfa4c5d3"
+  ],
   "caixa de som bluetooth portatil": [
     "assets/produtos/caixa-de-som-bluetooth-portatil/01.webp?v=9a9e204993",
     "assets/produtos/caixa-de-som-bluetooth-portatil/02.webp?v=71e2818e17",

@@ -29,7 +29,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg?v=e62508aea4",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso especificações antes de recomendar.",
-  atualizado: "2026-11-25",
+  atualizado: "2026-11-26",
   dadosConfirmados: true
 };
 
@@ -45,7 +45,8 @@ const EMOJIS = {
   "🔊": "assets/emojis/1f50a.svg",
   "💾": "assets/emojis/1f4be.svg",
   "📡": "assets/emojis/1f4e1.svg",
-  "🛒": "assets/emojis/1f6d2.svg"
+  "🛒": "assets/emojis/1f6d2.svg",
+  "🪑": "assets/emojis/1fa91.svg"
 };
 
 const EMOJI_PADRAO = "🛒";
@@ -459,6 +460,32 @@ const PRODUTOS = [
       "Corpo de alumínio"
     ],
     atencao: "A porta USB-C PD serve para carregar o notebook, não para dados. A resolução de 4K e a velocidade da rede dependem do aparelho e do cabo: confirme no anúncio a potência de carga, o padrão da Ethernet e se o seu dispositivo tem saída de vídeo pelo USB-C.",
+    testado: false,
+    destaque: null
+  },
+  {
+    nome: "Cadeira gamer e escritório x-ray fit com led rgb ergonômica cor preta material do estofamento couro sintético",
+    pasta: "cadeira-gamer-e-escritorio-x-ray-fit-com-led-rgb-ergonomica-cor-preta-couro-sintetico",
+    nicho: "Games",
+    emoji: "🪑",
+    imagem: "",
+    link: "https://meli.la/1ZnsWrk",
+    preco: "R$ 629,90",
+    precoAnterior: "R$ 999,90",
+    desconto: 37,
+    nota: 4.8,
+    avaliacoes: 1000,
+    estoque: true,
+    full: false,
+    descricao: "Para quem passa horas jogando ou trabalhando e quer uma cadeira com encosto alto, almofadas de cabeça e lombar e iluminação RGB. As fotos mostram apoio para os pés retrátil, encosto reclinável, ajuste de altura e um controle remoto para trocar as cores e os modos da luz. O estofamento é em couro sintético na cor preta.",
+    publico: "quem quer uma cadeira gamer para jogar e trabalhar no PC",
+    pros: [
+      "Iluminação RGB com controle remoto",
+      "Encosto reclinável e apoio para os pés",
+      "Almofadas de cabeça e lombar",
+      "Ajuste de altura e base com rodízios"
+    ],
+    atencao: "Confira no anúncio a capacidade de peso, as medidas montadas e como a luz RGB é alimentada. O estofamento é em couro sintético; a durabilidade e o conforto dependem do uso e da montagem.",
     testado: false,
     destaque: null
   },

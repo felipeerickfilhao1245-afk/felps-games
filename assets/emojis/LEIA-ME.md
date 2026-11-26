@@ -30,6 +30,7 @@ Os arquivos foram baixados sem alterações do repositório do Twemoji.
 | 💾 | U+1F4BE | `1f4be.svg` | Pen drive |
 | 📡 | U+1F4E1 | `1f4e1.svg` | Antena / receptores |
 | 🛒 | U+1F6D2 | `1f6d2.svg` | Carrinho, categoria “Todos” |
+| 🪑 | U+1FA91 | `1fa91.svg` | Cadeira |
 
 O mapa que liga cada caractere ao arquivo fica em `app.js`, na constante
 `EMOJIS`. Os emojis aparecem nos chips de categoria e como imagem de reserva
