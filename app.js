@@ -491,6 +491,30 @@ const PRODUTOS = [
     atencao: "Confira no anúncio a capacidade de peso, as medidas montadas e como a luz RGB é alimentada. O estofamento é em couro sintético; a durabilidade e o conforto dependem do uso e da montagem.",
     testado: false,
     destaque: null
+  },
+  {
+    nome: "Fone De Ouvido Gamer In-ear Dapon R11 Tws Bluetooth 5.1 Rgb Cor Preto",
+    pasta: "fone-de-ouvido-gamer-in-ear-dapon-r11-tws-bluetooth-5-1-rgb-cor-preto",
+    nicho: "Games",
+    emoji: "🎧",
+    imagem: "",
+    link: "https://meli.la/18YmD4X",
+    preco: "R$ 249,99",
+    nota: 4.2,
+    avaliacoes: 500,
+    estoque: true,
+    full: false,
+    descricao: "Fone de ouvido gamer in-ear sem fio da Dapon, modelo R11, com Bluetooth 5.1, iluminação RGB no estojo e modo de baixa latência para jogos. O estojo de carregamento abre e pareia com o celular, e os controles por toque ficam no próprio fone. As imagens mostram o par preto, o estojo com LED e o pareamento com o celular.",
+    publico: "quem quer um fone sem fio para jogar e ouvir música no celular ou no PC",
+    pros: [
+      "Bluetooth 5.1",
+      "Estojo de carregamento com luz RGB",
+      "Modo jogo com baixa latência",
+      "Controles por toque"
+    ],
+    atencao: "A autonomia da bateria, o alcance do Bluetooth e o isolamento do som variam com o uso. Confira no anúncio o tempo de bateria por carga, se o cabo de carregamento acompanha o produto e a garantia.",
+    testado: false,
+    destaque: null
   }
 ];
 
