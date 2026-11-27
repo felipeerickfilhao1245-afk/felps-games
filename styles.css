@@ -15,6 +15,7 @@
   --accent: #ffd93d;
   --accent-deep: #e8b900;
   --accent-soft: #fff4b8;
+  --accent-red: #e74c3c;
   --green: #187a4b;
   --green-soft: #e7f4ec;
   --warn: #8a4a10;
@@ -293,7 +294,7 @@ button, input, select { font: inherit; }
   font-weight: 500;
   letter-spacing: -0.03em;
   padding: 0 0.06em;
-  background: linear-gradient(transparent 64%, var(--accent) 64%, var(--accent) 94%, transparent 94%);
+  background: linear-gradient(transparent 64%, var(--accent-red) 64%, var(--accent-red) 94%, transparent 94%);
 }
 
 .hero-lead {
