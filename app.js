@@ -29,7 +29,7 @@ const CONFIG = {
   logo: "assets/logo-controle.svg?v=e62508aea4",
   subtitulo: "Games & Eletrônicos",
   bio: "Controles, headsets, periféricos e acessórios para montar seu setup. Analiso especificações antes de recomendar.",
-  atualizado: "2026-11-26",
+  atualizado: "2026-11-27",
   dadosConfirmados: true
 };
 
@@ -406,6 +406,8 @@ const PRODUTOS = [
     preco: "R$ 39,70",
     precoAnterior: "R$ 49,99",
     desconto: 20,
+    nota: 4.8,
+    avaliacoes: 10000,
     estoque: true,
     full: false,
     descricao: "Carregador turbo de 40 W com duas portas, USB-C e USB-A, para carregar dois aparelhos ao mesmo tempo. O anúncio mostra cabo de 1 m com conector Lightning, compatível com iPhone 8 ao 14, e fonte bivolt automática de 100–240 V. Tem nota 4,8 e mais de 10 mil vendidos.",
@@ -427,6 +429,8 @@ const PRODUTOS = [
     imagem: "",
     link: "https://meli.la/2JsgSM7",
     preco: "R$ 1.169,00",
+    nota: 4.9,
+    avaliacoes: 5000,
     estoque: true,
     full: false,
     descricao: "SSD Kingston NV3 de 1 TB no formato M.2 2280, com interface PCIe 4.0 x4 e NVMe. Serve para dar mais espaço e velocidade ao PC e também para o slot M.2 do PlayStation 5. O anúncio tem nota 4,9 e mais de 5 mil vendidos.",
@@ -692,14 +696,14 @@ function notaHtml(produto) {
     minimumFractionDigits: 1,
     maximumFractionDigits: 1
   });
-  const avaliacoesTexto = new Intl.NumberFormat("pt-BR").format(avaliacoes);
-  const rotuloAvaliacoes = avaliacoes === 1 ? "avaliação" : "avaliações";
+  const vendidosTexto = new Intl.NumberFormat("pt-BR").format(avaliacoes);
+  const rotuloVendidos = avaliacoes === 1 ? "vendido" : "vendidos";
 
   return `<p class="rating">
       <span class="sr-only">Nota do anúncio no Mercado Livre: </span>
       <span class="rating-star" aria-hidden="true">★</span>
       <strong>${notaTexto}</strong>
-      <span class="rating-context">· ${avaliacoesTexto} ${rotuloAvaliacoes} no anúncio</span>
+      <span class="rating-context">· ${vendidosTexto} ${rotuloVendidos} no anúncio</span>
     </p>`;
 }
 
