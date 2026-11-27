@@ -19,7 +19,7 @@
       <path fill-rule="evenodd" d="M28 6a22 22 0 1 0 0 44a22 22 0 1 0 0-44Zm0 16a6 6 0 1 0 0 12a6 6 0 1 0 0-12Z"/>
     </symbol>
   </defs>
-  <g fill="#17181c" opacity="0.055">
+  <g fill="#17181c" opacity="0.09">
     <use href="#controle" x="20" y="18" width="56" height="56" transform="rotate(-8 48 46)"/>
     <use href="#gamepad" x="210" y="36" width="56" height="56" transform="rotate(10 238 64)"/>
     <use href="#headset" x="104" y="118" width="56" height="56" transform="rotate(-6 132 146)"/>
